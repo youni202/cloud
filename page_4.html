@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>다이렉트클라우드 소개</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 830px; font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 830px;
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .title-bar {
+            background-color: #0078D4;
+            height: 90px;
+            padding: 0 40px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content-area {
+            padding: 30px 40px;
+        }
+        .highlight {
+            color: #0078D4;
+            font-weight: 600;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #0078D4;
+        }
+        .timeline-item:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 26px;
+            width: 2px;
+            height: calc(100% - 14px);
+            background-color: #e2e8f0;
+        }
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        .achievement-card {
+            transition: transform 0.3s ease;
+        }
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+<div class="slide">
+<!-- Title Bar -->
+<div class="title-bar flex items-center">
+<h1>다이렉트클라우드 소개</h1>
+</div>
+<!-- Content Area -->
+<div class="content-area">
+<div class="grid grid-cols-2 gap-8">
+<!-- Left Column - Company History -->
+<div>
+<h2 class="text-2xl font-semibold mb-6 flex items-center">
+<i class="fas fa-history text-blue-600 mr-3"></i>회사 연혁
+                    </h2>
+<div class="card p-6">
+<div class="space-y-5">
+<div class="timeline-item pb-5">
+<p class="font-bold">1992년</p>
+<p>삼정데이타시스템 설립, 대한민국 IT 산업의 역사와 함께 성장</p>
+</div>
+<div class="timeline-item pb-5">
+<p class="font-bold">1997년</p>
+<p>삼정데이타서비스㈜ 법인 전환</p>
+</div>
+<div class="timeline-item pb-5">
+<p class="font-bold">2001년</p>
+<p>Microsoft Certified Partner (MCP) 등록, Microsoft와 파트너십 시작</p>
+</div>
+<div class="timeline-item pb-5">
+<p class="font-bold">2013년</p>
+<p>클라우드 전문 브랜드 &#39;다이렉트클라우드&#39; 론칭</p>
+</div>
+<div class="timeline-item pb-5">
+<p class="font-bold">2014년</p>
+<p class="highlight">국내 최초 Microsoft Cloud Solution Provider (CSP) 파트너 선정</p>
+</div>
+<div class="timeline-item pb-5">
+<p class="font-bold">2016년</p>
+<p>메일나라 클라우드 V4.0 GS 인증 1등급 획득</p>
+</div>
+<div class="timeline-item">
+<p class="font-bold">현재</p>
+<p class="highlight">국내 최다 Microsoft 365 고객사를 보유한 시장점유율 1위 CSP 파트너</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column - Core Competencies -->
+<div>
+<h2 class="text-2xl font-semibold mb-6 flex items-center">
+<i class="fas fa-award text-blue-600 mr-3"></i>핵심 역량
+                    </h2>
+<div class="grid grid-cols-2 gap-4">
+<!-- Achievement Card 1 -->
+<div class="card p-4 achievement-card">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+<i class="fas fa-trophy text-blue-600"></i>
+</div>
+<h3 class="font-bold">독보적인 시장 리더십</h3>
+</div>
+<p class="text-sm">국내 최초이자 시장점유율 1위의 Microsoft CSP 파트너</p>
+</div>
+<!-- Achievement Card 2 -->
+<div class="card p-4 achievement-card">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+<i class="fas fa-check-circle text-green-600"></i>
+</div>
+<h3 class="font-bold">검증된 전문성</h3>
+</div>
+<p class="text-sm">30년 이상의 IT 서비스 업력과 20년간 이어온 Microsoft 협업 경험</p>
+</div>
+<!-- Achievement Card 3 -->
+<div class="card p-4 achievement-card">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center mr-3">
+<i class="fas fa-headset text-orange-600"></i>
+</div>
+<h3 class="font-bold">프리미엄 기술 지원</h3>
+</div>
+<p class="text-sm">체계적인 프리미엄 기술 지원 서비스 제공, 24시간 장애 대응 체계</p>
+</div>
+<!-- Achievement Card 4 -->
+<div class="card p-4 achievement-card">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+<i class="fas fa-users text-purple-600"></i>
+</div>
+<h3 class="font-bold">합리적인 가격 정책</h3>
+</div>
+<p class="text-sm">Microsoft와의 직접적인 파트너십을 통해 국내 최저가 수준의 경쟁력 있는 가격</p>
+</div>
+</div>
+<!-- Microsoft 365 Migration Experience -->
+<div class="mt-5 bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
+<h3 class="font-bold mb-2 flex items-center">
+<i class="fas fa-exchange-alt text-blue-600 mr-2"></i>
+                            Microsoft 365 메일 마이그레이션 최다 경험
+                        </h3>
+<p>국내 최다 Microsoft 365 메일 마이그레이션 프로젝트를 성공적으로 수행하며, 고객사의 이메일 및 데이터 마이그레이션에 대한 신뢰를 받고 있습니다.</p>
+</div>
+<!-- Customer Testimonial -->
+<div class="mt-5 card p-4">
+<p class="text-sm italic text-gray-600">
+<i class="fas fa-quote-left text-blue-400 mr-1"></i>
+                            다이렉트클라우드는 단순한 리셀러가 아닌, 고객의 클라우드 여정 전반을 책임지는 기술 파트너로서 독보적인 경쟁력을 갖추고 있습니다.
+                            <i class="fas fa-quote-right text-blue-400 ml-1"></i>
+</p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-4 right-6 text-gray-500 text-sm">
+<p>Page 4 of 12</p>
+</div>
+</div>
+</div>
+
+</body></html>

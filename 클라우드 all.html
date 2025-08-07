@@ -1,0 +1,4277 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Direct Cloud 솔루션 제안서</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 900;
+            font-size: 4.5rem;
+            line-height: 1.2;
+            color: #333333;
+        }
+        .highlight {
+            color: #007BFF;
+        }
+        .subtitle-box {
+            background-color: #007BFF;
+            display: inline-block;
+            padding: 8px 32px;
+            margin-top: 16px;
+            border-radius: 4px;
+        }
+        .subtitle {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            color: #FFFFFF;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        .content-container {
+            position: relative;
+            z-index: 10;
+        }
+        .accent-shape {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background-color: rgba(0, 123, 255, 0.05);
+            border-radius: 50%;
+            top: -200px;
+            right: -200px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="slide">
+<div class="accent-shape"></div>
+<div class="content-container flex flex-col p-16 h-full">
+<!-- Company Logo/Name -->
+<div class="mb-12">
+<div class="flex items-center">
+<i class="fas fa-cloud text-2xl mr-3" style="color: #007BFF;"></i>
+<span class="text-xl font-medium" style="color: #333333;">삼정데이타서비스 다이렉트클라우드</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex flex-col justify-center">
+<h1 class="title mb-4"><span class="highlight">Microsoft 365 &amp; Azure</span><br/>클라우드 솔루션 제안서</h1>
+<div class="subtitle-box">
+<p class="subtitle">비즈니스 혁신을 위한 최적의 선택</p>
+</div>
+<p class="mt-8 text-xl" style="color: #333333;">디지털 혁신을 위한 맞춤형 클라우드 솔루션</p>
+</div>
+<!-- Footer -->
+<div class="mt-auto flex justify-between items-center">
+<div style="color: #333333;">
+<p class="mb-1 text-sm opacity-80">제안사:</p>
+<p class="text-xl font-semibold">삼정데이타서비스 영업컨설팅팀</p>
+</div>
+<div class="flex items-center">
+<i class="fas fa-phone text-lg mr-2" style="color: #007BFF;"></i>
+<span class="text-sm mr-4" style="color: #333333;">02-2029-0365</span>
+<i class="fas fa-globe text-lg mr-2" style="color: #007BFF;"></i>
+<p class="text-sm" style="color: #333333;">www.directcloud.co.kr</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Direct Cloud Microsoft 365 &amp; Azure 클라우드 솔루션 제안서 - 목차</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: #007BFF;
+        }
+        .overview-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #333333;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .title-accent {
+            color: #007BFF;
+        }
+        .btn-primary {
+            background-color: #007BFF;
+            color: #FFFFFF;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            width: 280px;
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            margin: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn-secondary {
+            background-color: #F8F9FA;
+            color: #333333;
+            border: 1px solid #E9ECEF;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            width: 280px;
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            margin: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .btn-number {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .btn-secondary .btn-number {
+            background-color: #E9ECEF;
+            color: #333333;
+        }
+        .btn-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .buttons-container {
+            width: 1180px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            color: #333333;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .logo-icon {
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+<div class="slide flex flex-col items-center justify-center">
+<div class="accent-shape"></div>
+<!-- Main Content -->
+<div class="flex-grow flex flex-col items-center justify-center">
+<h1 class="overview-title"><span class="title-accent">목차</span></h1>
+<div class="buttons-container">
+<div class="btn-row">
+<div class="btn-primary">
+<span>제안 개요</span>
+<span class="btn-number">1</span>
+</div>
+<div class="btn-secondary">
+<span>시장 환경 분석</span>
+<span class="btn-number">2</span>
+</div>
+<div class="btn-primary">
+<span>회사 소개</span>
+<span class="btn-number">3</span>
+</div>
+</div>
+<div class="btn-row">
+<div class="btn-secondary">
+<span>Microsoft 365 솔루션</span>
+<span class="btn-number">4</span>
+</div>
+<div class="btn-primary">
+<span>Azure 클라우드 서비스</span>
+<span class="btn-number">5</span>
+</div>
+<div class="btn-secondary">
+<span>경쟁 우위 분석</span>
+<span class="btn-number">6</span>
+</div>
+</div>
+<div class="btn-row">
+<div class="btn-primary">
+<span>ROI 및 비즈니스 효과</span>
+<span class="btn-number">7</span>
+</div>
+<div class="btn-secondary">
+<span>구축 방안</span>
+<span class="btn-number">8</span>
+</div>
+<div class="btn-primary">
+<span>기술 지원 서비스</span>
+<span class="btn-number">9</span>
+</div>
+</div>
+<div class="btn-row">
+<div class="btn-secondary">
+<span>성공 사례</span>
+<span class="btn-number">10</span>
+</div>
+<div class="btn-primary">
+<span>제안 요약 및 Next Steps</span>
+<span class="btn-number">11</span>
+</div>
+<div class="btn-secondary">
+<span>부록/추가 자료</span>
+<span class="btn-number">12</span>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="flex items-center">
+<i class="fas fa-cloud logo-icon"></i>
+<span>삼정데이타서비스 다이렉트클라우드</span>
+</div>
+<div>Microsoft 365 &amp; Azure 클라우드 솔루션 제안서</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html data-theme="light" lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>클라우드 시장 환경 분석</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .strategy-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .chart-container {
+            width: 100%;
+            height: 320px;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid rgba(0, 123, 255, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .company-text {
+            color: #007BFF;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .key-point {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px;
+            margin-top: 12px;
+        }
+        .data-point {
+            display: inline-block;
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 10px 20px;
+            margin: 10px 10px 0 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .chart-title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #333333;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-4">클라우드 시장 환경 분석</h1>
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8">
+<p class="strategy-text mb-6">
+국내 클라우드 시장은 디지털 전환 가속화, 생성형 AI 도입 수요 증가, 그리고 원격/하이브리드 업무 환경의 확산으로 급속히 성장하고 있습니다. 이러한 환경에서 <span class="highlight">신뢰할 수 있는 클라우드 파트너 선택</span>이 기업의 성공적인 디지털 전환을 위한 핵심 요소가 되었습니다.
+</p>
+<div class="mt-8 flex flex-wrap">
+<div class="data-point w-full mb-4">
+<span class="highlight">시장규모</span> 3조 8,952억원 (2025년)
+</div>
+<div class="data-point w-full mb-4">
+<span class="highlight">연평균 성장률</span> 14.8% (CAGR)
+</div>
+<div class="data-point w-full mb-4">
+<span class="highlight">주요 동인</span> AI 인프라 수요 증가
+</div>
+</div>
+<div class="key-point mt-8">
+<p class="strategy-text mb-0">
+클라우드 도입 성공을 위해서는 <span class="highlight">기술적 전문성과 지속적인 지원</span>을 제공할 수 있는 <span class="highlight">Microsoft 공식 클라우드 파트너</span>와 함께하는 것이 중요합니다.
+</p>
+</div>
+</div>
+<!-- Right Column - Chart -->
+<div class="w-1/2 pl-8">
+<p class="chart-title mb-6">국내 퍼블릭 클라우드 시장 성장 추이</p>
+<div class="chart-container">
+<canvas id="marketChart"></canvas>
+</div>
+<p class="text-sm text-gray-600 mt-4 text-center">
+출처: 한국IDC, 과학기술정보통신부 부가통신사업 실태조사 (2025년 추정치)
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 시장 성장 차트
+    const marketCtx = document.getElementById('marketChart').getContext('2d');
+    const marketChart = new Chart(marketCtx, {
+        type: 'bar',
+        data: {
+            labels: ['2023', '2024', '2025', '2026'],
+            datasets: [{
+                label: '국내 퍼블릭 클라우드 시장 규모 (억원)',
+                data: [29500, 34000, 38952, 44700],
+                backgroundColor: 'rgba(0, 123, 255, 0.7)',
+                borderColor: 'rgba(0, 123, 255, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: false,
+                    title: {
+                        display: true,
+                        text: '시장 규모 (억원)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: '연도'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>디지털 트랜스포메이션 및 클라우드 트렌드</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .strategy-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .chart-container {
+            width: 100%;
+            height: 220px;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid rgba(0, 123, 255, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .company-text {
+            color: #007BFF;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .key-point {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px;
+            margin-top: 12px;
+        }
+        .data-point {
+            display: inline-block;
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 8px 16px;
+            margin: 8px 8px 0 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .trend-box {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px 15px;
+            margin-top: 12px;
+            border-radius: 0 4px 4px 0;
+        }
+        .trend-box h3 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: #007BFF;
+        }
+        .trend-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .trend-list li {
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+        .chart-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #333333;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .pie-container {
+            height: 180px;
+        }
+        .icon-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .icon-box i {
+            font-size: 1.2rem;
+            color: #007BFF;
+            margin-right: 10px;
+            width: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-4">디지털 트랜스포메이션 트렌드</h1>
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8" style="position: relative; transform: translate(-22.6799px, -5.44352px);">
+<p class="strategy-text mb-3">
+디지털 트랜스포메이션은 단순한 IT 도입을 넘어 비즈니스 프로세스와 조직 문화의 근본적인 변화를 의미합니다. 글로벌 팬데믹 이후 <span class="highlight">디지털 전환 가속화</span>는 생존을 위한 필수 요소가 되었으며, 클라우드는 이 변화의 중심에 있습니다.
+</p>
+<div class="trend-box mt-2">
+<h3><i class="fas fa-chart-line mr-2"></i> 클라우드 시장 주요 트렌드</h3>
+<ul class="trend-list">
+<li><strong>생성형 AI</strong> - 클라우드 기반 AI 서비스 수요 급증</li>
+<li><strong>멀티클라우드</strong> - 2025년까지 기업의 40%가 멀티클라우드 데이터 플랫폼 도입</li>
+<li><strong>보안 강화</strong> - AI 기반 클라우드 보안 솔루션 채택 증가</li>
+<li><strong>비용 최적화</strong> - FinOps를 통한 클라우드 지출 관리 중요성 부각</li>
+</ul>
+</div>
+<div class="trend-box mt-3">
+<h3><i class="fas fa-lightbulb mr-2"></i> 디지털 트랜스포메이션 성공 요소</h3>
+<ul class="trend-list">
+<li><strong>리더십의 지원</strong> - 경영진의 명확한 비전과 적극적 지원</li>
+<li><strong>민첩한 조직 문화</strong> - 빠른 의사결정과 변화 수용</li>
+<li><strong>기술적 인프라</strong> - 확장성 높은 클라우드 환경 구축</li>
+<li><strong>데이터 활용 역량</strong> - 데이터 기반 통찰력 확보</li>
+</ul>
+</div>
+<div class="flex flex-wrap mt-3" style="position: relative; transform: translate(653.181px, -707.613px);">
+<div class="data-point">
+<span class="highlight">기업 투자</span> 전년 대비 18.2% 증가
+</div>
+<div class="data-point">
+<span class="highlight">성공률</span> 디지털 선도기업 89% 수익 증가
+</div>
+<div class="data-point">
+<span class="highlight">주요 기술</span> AI, 클라우드, 데이터 분석
+</div>
+</div>
+</div>
+<!-- Right Column - Charts -->
+<div class="w-1/2 pl-8">
+<div class="h-full flex flex-col">
+<p class="chart-title mb-1">디지털 트랜스포메이션 우선순위 (2025)</p>
+<div class="chart-container mb-2">
+<canvas id="priorityChart" width="383" height="140" style="display: block; box-sizing: border-box; height: 187px; width: 511px;"></canvas>
+</div>
+<p class="text-sm text-gray-600 mb-2 text-center">
+출처: IDC, 포레스터 리서치 (2025년 전망)
+</p>
+<p class="chart-title mt-2 mb-1">국내 클라우드 활용 분야 (2025)</p>
+<div class="pie-container mb-1">
+<canvas id="cloudUsageChart" width="408" height="135" style="display: block; box-sizing: border-box; height: 180px; width: 544px;"></canvas>
+</div>
+<div class="trend-box mt-3">
+<h3><i class="fas fa-rocket mr-2"></i> 디지털 전환 가속화 요인</h3>
+<div class="flex flex-wrap">
+<div class="w-1/2">
+<ul class="trend-list">
+<li><strong>원격/하이브리드</strong> 근무 환경 정착화</li>
+<li><strong>기업 민첩성</strong> 향상을 위한 IT 유연성 확보</li>
+</ul>
+</div>
+<div class="w-1/2">
+<ul class="trend-list">
+<li><strong>비즈니스 연속성</strong>과 재해 복구 능력 강화</li>
+<li><strong>레거시 시스템</strong>의 현대화 및 통합 필요성</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 디지털 트랜스포메이션 우선순위 차트
+    const priorityCtx = document.getElementById('priorityChart').getContext('2d');
+    const priorityChart = new Chart(priorityCtx, {
+        type: 'bar',
+        data: {
+            labels: ['고객 경험 향상', '업무 프로세스 자동화', '데이터 분석/AI 활용', '클라우드 인프라 전환', '보안 강화', '인력 역량 강화'],
+            datasets: [{
+                data: [75, 68, 65, 62, 58, 52],
+                backgroundColor: 'rgba(0, 123, 255, 0.7)',
+                borderColor: 'rgba(0, 123, 255, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: '우선순위 점수 (100점 만점)'
+                    },
+                    max: 100
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+    
+    // 국내 클라우드 활용 분야 차트
+    const cloudUsageCtx = document.getElementById('cloudUsageChart').getContext('2d');
+    const cloudUsageChart = new Chart(cloudUsageCtx, {
+        type: 'pie',
+        data: {
+            labels: ['업무 생산성', 'AI/데이터 분석', '인프라(IaaS)', '보안', '기타'],
+            datasets: [{
+                data: [32, 25, 20, 15, 8],
+                backgroundColor: [
+                    'rgba(0, 123, 255, 0.7)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(255, 159, 64, 0.7)',
+                    'rgba(153, 102, 255, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(0, 123, 255, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'right',
+                    labels: {
+                        font: {
+                            size: 11
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.label + ': ' + context.parsed + '%';
+                        }
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>CSP 파트너십 개요</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .strategy-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .company-text {
+            color: #007BFF;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .key-point {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px;
+            margin-top: 12px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(0, 123, 255, 0.1);
+            color: #007BFF;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .csp-advantage {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+        }
+        .csp-advantage h3 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: #007BFF;
+        }
+        .csp-advantage-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .csp-advantage-list li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin-top: 20px;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: rgba(0, 123, 255, 0.3);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -34px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #007BFF;
+        }
+        .timeline-year {
+            font-weight: 700;
+            color: #007BFF;
+            margin-right: 8px;
+        }
+        .value-card {
+            background-color: #F8F9FA;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0, 123, 255, 0.2);
+        }
+        .value-card h3 {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .value-card i {
+            margin-right: 8px;
+            font-size: 1.4rem;
+        }
+        .value-card p {
+            margin: 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-4">CSP 파트너십 개요</h1>
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8">
+<p class="strategy-text mb-3">
+Microsoft <span class="highlight">CSP(Cloud Solution Provider)</span> 파트너십은 고객에게 클라우드 서비스를 직접 판매하고 기술 지원을 제공할 수 있는 Microsoft의 공식 프로그램입니다. Direct Cloud는 <span class="highlight">2014년 국내 최초 CSP 파트너</span>로 선정되어 현재까지 국내 시장점유율 1위를 유지하고 있습니다.
+</p>
+<div class="flex flex-wrap mt-2 mb-4">
+<span class="badge"><i class="fas fa-award mr-1"></i> 2014년 국내 최초 CSP</span>
+<span class="badge"><i class="fas fa-chart-line mr-1"></i> 국내 시장점유율 1위</span>
+<span class="badge"><i class="fas fa-handshake mr-1"></i> Microsoft 직접 계약</span>
+<span class="badge"><i class="fas fa-bolt mr-1"></i> 당일 라이선스 발급</span>
+</div>
+<div class="key-point mb-4" style="position: relative; transform: translate(0px, 3.066px);">
+<p class="strategy-text mb-0">
+<i class="fas fa-lightbulb text-blue-500 mr-2"></i> CSP 파트너는 Microsoft와 직접 계약하여 클라우드 서비스를 제공하는 <span class="highlight">공식 파트너</span>로, 볼륨 라이선싱 대비 최대 30% 비용 절감 효과와 함께 신속한 기술 지원이 가능합니다.
+</p>
+</div>
+<div class="csp-advantage mt-5" style="position: relative; transform: translate(2.36e-05px, -43.182px);">
+<h3><i class="fas fa-star mr-2"></i> CSP 파트너십 핵심 혜택</h3>
+<ul class="csp-advantage-list">
+<li><strong>Microsoft와의 직접 계약</strong> - 중간 유통 단계 없는 신속한 업무 처리</li>
+<li><strong>최대 30% 비용 절감</strong> - 볼륨 라이선싱 대비 비용 효율적인 구독 모델</li>
+<li><strong>당일 라이선스 발급</strong> - 즉시 서비스 이용 가능한 빠른 프로세스</li>
+<li><strong>1차 기술지원 권한</strong> - Direct Cloud를 통한 신속한 문제 해결</li>
+</ul>
+</div>
+</div>
+<!-- Right Column -->
+<div class="w-1/2 pl-8">
+<p class="strategy-text mb-4">
+Direct Cloud의 <span class="highlight">CSP 파트너십 연혁</span>은 2014년부터 현재까지 지속적인 성장과 혁신을 보여주고 있습니다. Microsoft와의 긴밀한 파트너십을 바탕으로 고객에게 최상의 클라우드 서비스를 제공하고 있습니다.
+</p>
+<div class="timeline">
+<div class="timeline-item">
+<p><span class="timeline-year">2014</span> Microsoft CSP 프로그램 국내 최초 파트너 선정</p>
+</div>
+<div class="timeline-item">
+<p><span class="timeline-year">2016</span> Microsoft 올해의 파트너상 수상 (클라우드 부문)</p>
+</div>
+<div class="timeline-item">
+<p><span class="timeline-year">2018</span> CSP 라이선스 공급 10만 계정 돌파</p>
+</div>
+<div class="timeline-item">
+<p><span class="timeline-year">2020</span> Microsoft CSP Advanced 인증 획득</p>
+</div>
+<div class="timeline-item">
+<p><span class="timeline-year">2022</span> CSP 계정 관리 시스템 자체 개발 런칭</p>
+</div>
+<div class="timeline-item">
+<p><span class="timeline-year">2023</span> CSP 파트너십 솔루션 혁신상 수상</p>
+</div>
+</div>
+<p class="strategy-text mt-4 text-center">
+<i class="fas fa-info-circle text-blue-500 mr-2"></i>
+<span class="highlight">상세 인증 현황 및 수상 실적은 다음 페이지에서 확인하실 수 있습니다.</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Microsoft 인증 현황 및 수상 실적</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .slide {
+        width: 1280px;
+        height: 720px;
+        background: #FFFFFF;
+        position: relative;
+        overflow: hidden;
+    }
+    .accent-shape {
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        background: rgba(0, 123, 255, 0.05);
+    }
+    .strategy-title {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+    .strategy-text {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #333333;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .company-text {
+        color: #007BFF;
+    }
+    .highlight {
+        color: #007BFF;
+        font-weight: 500;
+    }
+    .certification-box {
+        background-color: #F8F9FA;
+        border-radius: 8px;
+        border-left: 4px solid #007BFF;
+        padding: 16px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .certification-title {
+        font-weight: 700;
+        color: #333;
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+    .certification-desc {
+        color: #555;
+        font-size: 1rem;
+    }
+    .award-badge {
+        display: flex;
+        align-items: center;
+        background-color: #F8F9FA;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .award-icon {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 123, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+        flex-shrink: 0;
+    }
+    .award-text {
+        font-weight: 600;
+        color: #333;
+        font-size: 1.1rem;
+    }
+    .verification-note {
+        font-size: 0.95rem;
+        color: #666;
+        font-style: italic;
+        text-align: center;
+        margin-top: 16px;
+    }
+</style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-4">
+<div class="flex items-center">
+<i class="fas fa-award text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-4">Microsoft 인증 현황 및 수상 실적</h1>
+<div class="flex">
+<!-- Left Column - Certifications -->
+<div class="w-1/2 pr-8">
+<p class="strategy-text mb-4">
+Direct Cloud는 Microsoft로부터 <span class="highlight">공식 인증받은 CSP 파트너</span>로서, 엄격한 기술 역량 및 고객 만족도 기준을 충족해 획득한 다수의 파트너십과 인증을 보유하고 있습니다.
+</p>
+<div class="certification-box">
+<h3 class="certification-title">Microsoft Gold Partner</h3>
+<p class="certification-desc">클라우드 플랫폼 및 생산성 분야 최고 등급 파트너</p>
+</div>
+<div class="certification-box">
+<h3 class="certification-title">Cloud Security Partner</h3>
+<p class="certification-desc">Microsoft 클라우드 보안 전문 파트너 인증</p>
+</div>
+<div class="certification-box">
+<h3 class="certification-title">Solution Assessment Partner</h3>
+<p class="certification-desc">공식 마이그레이션 및 클라우드 전환 평가 자격</p>
+</div>
+<div class="certification-box">
+<h3 class="certification-title">Advanced Support Partner</h3>
+<p class="certification-desc">고급 기술 지원 제공 인증 파트너</p>
+</div>
+</div>
+<!-- Right Column - Awards -->
+<div class="w-1/2 pl-8">
+<p class="strategy-text mb-4">
+Direct Cloud는 Microsoft 클라우드 솔루션 제공 및 기술 지원 분야에서 <span class="highlight">우수한 성과를 인정받아</span> 다양한 파트너 수상 실적을 보유하고 있습니다.
+</p>
+<div class="award-badge">
+<div class="award-icon">
+<i class="fas fa-trophy text-blue-500" style="font-size: 1.5rem;"></i>
+</div>
+<span class="award-text">올해의 CSP 파트너상</span>
+</div>
+<div class="award-badge">
+<div class="award-icon">
+<i class="fas fa-cloud text-blue-500" style="font-size: 1.5rem;"></i>
+</div>
+<span class="award-text">클라우드 혁신상</span>
+</div>
+<div class="award-badge">
+<div class="award-icon">
+<i class="fas fa-chart-line text-blue-500" style="font-size: 1.5rem;"></i>
+</div>
+<span class="award-text">최우수 비즈니스 성장상</span>
+</div>
+<div class="award-badge">
+<div class="award-icon">
+<i class="fas fa-users text-blue-500" style="font-size: 1.5rem;"></i>
+</div>
+<span class="award-text">고객 성공 사례상</span>
+</div>
+<p class="verification-note mt-4">
+모든 인증 및 파트너십 현황은 Microsoft 파트너 포털에서 검증 가능합니다.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Microsoft 365 보안 &amp; 컴플라이언스</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .analysis-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 900;
+            font-size: 52px;
+            line-height: 1.1;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .section-header {
+            color: #333333;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .feature-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feature-table th {
+            background-color: #0078d4;
+            color: white;
+            font-weight: 600;
+            text-align: left;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+        .feature-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+        }
+        .feature-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .feature-table tr:last-child td {
+            border-bottom: none;
+        }
+        .highlight-cell {
+            background-color: rgba(0, 120, 212, 0.1);
+            font-weight: 600;
+        }
+        .rating-high {
+            color: #38a169;
+        }
+        .rating-medium {
+            color: #d69e2e;
+        }
+        .rating-low {
+            color: #e53e3e;
+        }
+        .ms-icon {
+            color: #0078d4;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-curve"></div>
+<!-- Company Logo/Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-shield-alt text-[#0078d4] mr-3"></i>
+<span class="text-[#333333] text-xl font-bold">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow">
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8">
+<h1 class="analysis-title mb-6">Microsoft 365<br>보안 &amp; 컴플라이언스</h1>
+<p class="text-[#333333] text-base mb-8">
+    Microsoft 365는 기업의 데이터를 지능형 위협으로부터 보호하고, 
+    규제 준수 요구사항을 충족할 수 있는 통합된 보안 및 컴플라이언스 솔루션을 제공합니다.
+</p>
+<div class="mt-4">
+<h3 class="section-header mb-4">주요 보안 &amp; 컴플라이언스 특징</h3>
+<ul class="list-disc pl-6 text-[#333333] space-y-3">
+<li>AI 기반 지능형 위협 보호 시스템</li>
+<li>다중 인증 및 조건부 접근 제어</li>
+<li>데이터 손실 방지(DLP) 정책 관리</li>
+<li>규제 준수 관리 대시보드</li>
+<li>중요 정보 자동 분류 및 보호</li>
+</ul>
+</div>
+</div>
+<!-- Right Column - Table (replacing image) -->
+<div class="w-1/2 pl-8">
+<table class="feature-table">
+<thead>
+<tr>
+<th>보안 &amp; 컴플라이언스 기능</th>
+<th>Basic</th>
+<th>Standard</th>
+<th>Premium</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Defender for Office 365</td>
+<td><i class="far fa-times-circle text-gray-400"></i></td>
+<td><i class="far fa-check-circle rating-medium"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+<tr>
+<td>Azure Active Directory P1/P2</td>
+<td><i class="far fa-times-circle text-gray-400"></i></td>
+<td><i class="far fa-check-circle rating-medium"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+<tr>
+<td>다중 인증(MFA)</td>
+<td><i class="far fa-check-circle rating-low"></i></td>
+<td><i class="far fa-check-circle rating-medium"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+<tr>
+<td>데이터 손실 방지(DLP)</td>
+<td><i class="far fa-times-circle text-gray-400"></i></td>
+<td><i class="far fa-check-circle rating-medium"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+<tr>
+<td>정보 보호 &amp; 거버넌스</td>
+<td><i class="far fa-times-circle text-gray-400"></i></td>
+<td><i class="far fa-check-circle rating-medium"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+<tr>
+<td>규제 준수 관리</td>
+<td><i class="far fa-times-circle text-gray-400"></i></td>
+<td><i class="far fa-check-circle rating-medium"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+<tr>
+<td>인사이더 위험 관리</td>
+<td><i class="far fa-times-circle text-gray-400"></i></td>
+<td><i class="far fa-times-circle text-gray-400"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+<tr>
+<td>보안 점수 &amp; 위협 분석</td>
+<td><i class="far fa-check-circle rating-low"></i></td>
+<td><i class="far fa-check-circle rating-medium"></i></td>
+<td><i class="fas fa-check-circle rating-high"></i></td>
+</tr>
+</tbody>
+</table>
+<div class="mt-6 text-center">
+<p class="text-sm text-blue-600 font-medium">
+<i class="fas fa-info-circle mr-2"></i>보안 관리 및 컴플라이언스 관리에 대한 상세 내용은 다음 페이지에서 계속됩니다.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+<!DOCTYPE html>
+
+<html data-theme="light" lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>보안관리 및 컴플라이언스 관리 상세</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .analysis-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 1.1;
+            color: #333333;
+            margin-bottom: 16px;
+        }
+        .section-header {
+            color: #333333;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .feature-box {
+            border-radius: 6px;
+            border: 1px solid rgba(0, 120, 212, 0.2);
+            background: rgba(0, 120, 212, 0.03);
+            padding: 12px;
+            margin-bottom: 12px;
+        }
+        .feature-box h4 {
+            color: #0078d4;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .feature-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .feature-list li i {
+            color: #0078d4;
+            margin-right: 8px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide flex flex-col p-16">
+<div class="accent-curve"></div>
+<!-- Company Logo/Name -->
+<div class="mb-4">
+<div class="flex items-center">
+<i class="fas fa-shield-alt text-[#0078d4] mr-3"></i>
+<span class="text-[#333333] text-xl font-bold">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow">
+<h1 class="analysis-title mb-4">보안관리 및 컴플라이언스 관리 상세</h1>
+<p class="text-[#333333] text-sm mb-6">
+    Microsoft 365는 포괄적인 보안 관리 및 컴플라이언스 관리 기능을 제공하여 기업의 데이터를 안전하게 보호하고 규제 준수를 지원합니다.
+</p>
+<div class="flex">
+<!-- Left Column - 보안 관리 -->
+<div class="w-1/2 pr-8">
+<h2 class="section-header mb-4 flex items-center text-[#0078d4]">
+<i class="fas fa-lock mr-2"></i>보안 관리
+        </h2>
+<div class="feature-box">
+<h4><i class="fas fa-shield-alt mr-2"></i>Microsoft Defender for Office 365</h4>
+<ul class="text-sm list-none pl-2 text-gray-700">
+<li>• 고급 피싱 및 맬웨어 방지</li>
+<li>• 의심스러운 첨부파일 자동 격리</li>
+<li>• 실시간 위협 인텔리전스 대응</li>
+</ul>
+</div>
+<div class="feature-box">
+<h4><i class="fas fa-user-shield mr-2"></i>다중 인증 및 조건부 접근</h4>
+<ul class="text-sm list-none pl-2 text-gray-700">
+<li>• 생체인식, SMS, 앱 인증 옵션</li>
+<li>• 지역, 디바이스 기반 접근 제어</li>
+<li>• 위험 기반 접근 정책 설정</li>
+</ul>
+</div>
+<div class="feature-box">
+<h4><i class="fas fa-eye mr-2"></i>보안 모니터링 및 알림</h4>
+<ul class="text-sm list-none pl-2 text-gray-700">
+<li>• 통합 보안 대시보드</li>
+<li>• AI 기반 이상 징후 탐지</li>
+<li>• 자동화된 보안 알림 및 대응</li>
+</ul>
+</div>
+</div>
+<!-- Right Column - 컴플라이언스 관리 -->
+<div class="w-1/2 pl-8">
+<h2 class="section-header mb-4 flex items-center text-[#0078d4]">
+<i class="fas fa-clipboard-check mr-2"></i>컴플라이언스 관리
+        </h2>
+<div class="feature-box">
+<h4><i class="fas fa-file-contract mr-2"></i>정보 거버넌스</h4>
+<ul class="text-sm list-none pl-2 text-gray-700">
+<li>• 문서 보존 정책 관리</li>
+<li>• 자동 레코드 관리</li>
+<li>• 데이터 라이프사이클 정책 설정</li>
+</ul>
+</div>
+<div class="feature-box">
+<h4><i class="fas fa-search mr-2"></i>데이터 검색 및 조사</h4>
+<ul class="text-sm list-none pl-2 text-gray-700">
+<li>• 전사적 콘텐츠 검색</li>
+<li>• eDiscovery 케이스 관리</li>
+<li>• 법적 증거 보존 기능</li>
+</ul>
+</div>
+<div class="feature-box">
+<h4><i class="fas fa-chart-line mr-2"></i>규제 준수 평가</h4>
+<ul class="text-sm list-none pl-2 text-gray-700">
+<li>• GDPR, HIPAA 등 규제 평가 도구</li>
+<li>• 컴플라이언스 점수 및 개선 지침</li>
+<li>• 감사 보고서 자동 생성</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-4 flex justify-between">
+<div class="bg-blue-50 rounded-lg p-3 w-[48%] border-l-4 border-blue-500">
+<p class="text-sm font-medium text-blue-800">
+<i class="fas fa-lightbulb mr-2"></i>Direct Cloud는 고객사별 맞춤형 보안 정책 설계 및 구현을 지원합니다.
+        </p>
+</div>
+<div class="bg-blue-50 rounded-lg p-3 w-[48%] border-l-4 border-blue-500">
+<p class="text-sm font-medium text-blue-800">
+<i class="fas fa-shield-alt mr-2"></i>Microsoft 365 E5 보안 플랜으로 통합 보안 관리 체계를 구축하세요.
+        </p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Azure AI 및 혁신 솔루션</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .strategy-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .chart-container {
+            width: 100%;
+            height: 240px;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid rgba(0, 123, 255, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .company-text {
+            color: #007BFF;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .key-point {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px;
+            margin-top: 12px;
+        }
+        .data-point {
+            display: inline-block;
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 8px 16px;
+            margin: 8px 8px 0 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .ai-box {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px 15px;
+            margin-top: 12px;
+            border-radius: 0 4px 4px 0;
+        }
+        .ai-box h3 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: #007BFF;
+        }
+        .ai-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .ai-list li {
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+        .chart-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #333333;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .tech-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #F8F9FA;
+            border-radius: 50%;
+            margin-right: 10px;
+            color: #007BFF;
+        }
+        .case-study {
+            background-color: #F8F9FA;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        .case-study h4 {
+            color: #007BFF;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-4">Azure AI 및 혁신 솔루션</h1>
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8">
+<p class="strategy-text mb-3">
+Azure의 AI 및 머신러닝 솔루션은 <span class="highlight">비즈니스 프로세스 최적화</span>, <span class="highlight">의사결정 향상</span>, <span class="highlight">새로운 가치 창출</span>을 가능하게 합니다. Direct Cloud는 Microsoft의 최신 AI 기술을 활용하여 귀사의 디지털 혁신을 지원합니다.
+</p>
+<div class="flex flex-wrap">
+<div class="data-point">
+<span class="highlight">ROI</span> 최대 300% 향상
+</div>
+<div class="data-point">
+<span class="highlight">생산성</span> 평균 40% 증가
+</div>
+<div class="data-point">
+<span class="highlight">비용</span> 최대 45% 절감
+</div>
+</div>
+<div class="ai-box mt-5">
+<h3><i class="fas fa-robot mr-2"></i> Azure AI 주요 서비스</h3>
+<ul class="ai-list">
+<li><strong>Azure OpenAI Service</strong> - GPT-4, DALL-E 등 최신 AI 모델 활용</li>
+<li><strong>Azure Cognitive Services</strong> - 시각, 음성, 언어, 의사결정 지원 API</li>
+<li><strong>Azure Machine Learning</strong> - 엔드-투-엔드 ML 모델 개발 및 배포</li>
+<li><strong>Azure Bot Service</strong> - 다양한 채널에서 동작하는 지능형 봇 구축</li>
+</ul>
+</div>
+<div class="ai-box mt-3">
+<h3><i class="fas fa-lightbulb mr-2"></i> 혁신 적용 영역</h3>
+<ul class="ai-list">
+<li><strong>업무 자동화</strong> - 반복적 작업 자동화로 인적 자원 최적화</li>
+<li><strong>데이터 인사이트</strong> - 예측 분석 및 실시간 의사결정 지원</li>
+<li><strong>고객 경험</strong> - 개인화된 서비스와 AI 기반 응대 시스템</li>
+<li><strong>신제품 개발</strong> - AI 기반 R&amp;D 가속화 및 신기술 도입</li>
+</ul>
+</div>
+</div>
+<!-- Right Column - Charts & Cases -->
+<div class="w-1/2 pl-8">
+<div class="h-full flex flex-col" style="position: relative; transform: translate(2.72159px, -170.553px);">
+<p class="chart-title">Azure AI 기술 도입 효과 (산업별)</p>
+<div class="chart-container mb-3">
+<canvas id="aiImpactChart" width="383" height="155" style="display: block; box-sizing: border-box; height: 207px; width: 511px;"></canvas>
+</div>
+<p class="text-sm text-gray-600 mb-3 text-center">
+출처: Microsoft Azure AI 고객 성과 보고서 2024
+</p>
+<div class="case-study">
+<h4><i class="fas fa-building mr-2"></i> 금융권 AI 혁신 사례</h4>
+<p class="text-sm leading-tight mb-1">국내 대형 금융사는 Azure OpenAI Service를 활용한 대화형 고객 상담 시스템을 도입하여 <strong>상담 처리 시간 65% 단축</strong>, <strong>고객 만족도 48% 향상</strong>을 달성했습니다.</p>
+</div>
+<div class="case-study mt-2">
+<h4><i class="fas fa-industry mr-2"></i> 제조업 AI 적용 사례</h4>
+<p class="text-sm leading-tight mb-1">글로벌 제조기업은 Azure Machine Learning과 IoT를 결합한 예지 정비 시스템으로 <strong>설비 가동률 35% 향상</strong>, <strong>유지보수 비용 42% 절감</strong> 효과를 얻었습니다.</p>
+</div>
+<div class="key-point mt-3">
+<p class="strategy-text mb-0">
+<span class="highlight">Direct Cloud의 차별화된 AI 지원:</span> 단순한 기술 도입을 넘어 <span class="highlight">비즈니스 가치 창출</span>에 초점을 맞춘 Azure AI 솔루션을 제공합니다. Microsoft AI 전문가와 함께 귀사의 디지털 혁신을 가속화하세요.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // AI 기술 도입 효과 차트
+    const aiCtx = document.getElementById('aiImpactChart').getContext('2d');
+    const aiChart = new Chart(aiCtx, {
+        type: 'bar',
+        data: {
+            labels: ['금융', '제조', '유통', '의료', 'IT'],
+            datasets: [{
+                label: '생산성 향상',
+                data: [42, 38, 35, 45, 52],
+                backgroundColor: 'rgba(0, 123, 255, 0.7)'
+            }, {
+                label: '비용 절감',
+                data: [38, 45, 32, 28, 35],
+                backgroundColor: 'rgba(54, 162, 235, 0.7)'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 60,
+                    title: {
+                        display: true,
+                        text: '개선율 (%)'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        font: {
+                            size: 11
+                        }
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+
+<!DOCTYPE html>
+<html lang="ko" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>도입 전후 비교 분석</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.03);
+        }
+        .result-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+        }
+        .body-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+        }
+        .chart-container {
+            width: 550px;
+            height: 380px;
+            background-color: rgba(0, 123, 255, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid rgba(0, 123, 255, 0.1);
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .kpi-card {
+            background-color: #F8F9FA;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-left: 4px solid #007BFF;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Header -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-exchange-alt text-[#007BFF] mr-3"></i>
+<span class="text-[#333333] text-xl body-text">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-10">
+<h1 class="result-title mb-6">도입 전후 비교 분석</h1>
+<div class="text-[#333333] text-sm mb-6 body-text">
+<p class="mb-4">Microsoft 365와 Azure 클라우드 솔루션 도입은 기업의 <span class="highlight">디지털 혁신과 비즈니스 효율성</span>에 획기적인 변화를 가져옵니다. 도입 전후 주요 비즈니스 지표를 비교해 보세요.</p>
+<div class="kpi-card">
+<h3 class="font-bold mb-1">비용 효율성</h3>
+<p class="text-sm">기존 온프레미스 IT 인프라 대비 총 소유 비용(TCO) <span class="highlight">30% 절감</span>. 초기 투자 비용이 아닌 실사용량 기반 지불 체계로 전환.</p>
+</div>
+<div class="kpi-card">
+<h3 class="font-bold mb-1">업무 생산성</h3>
+<p class="text-sm">Microsoft 365 Copilot 도입으로 문서 작업 시간 <span class="highlight">40% 단축</span>과 Azure AI 서비스로 데이터 분석 시간 <span class="highlight">65% 감소</span>.</p>
+</div>
+<div class="kpi-card">
+<h3 class="font-bold mb-1">보안 및 컴플라이언스</h3>
+<p class="text-sm">보안 사고 발생률 <span class="highlight">75% 감소</span>와 규제 준수 자동화로 컴플라이언스 감사 시간 <span class="highlight">50% 단축</span>.</p>
+</div>
+</div>
+</div>
+<!-- Right Column - Chart -->
+<div class="w-1/2 flex items-center justify-center">
+<div class="chart-container">
+<canvas id="comparisonChart" width="387" height="260" style="display: block; box-sizing: border-box; height: 347px; width: 517px;"></canvas>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="mt-auto flex justify-between items-center body-text">
+<div class="text-[#333333]">
+<p class="mb-1 text-sm opacity-80">Microsoft 365 &amp; Azure 클라우드 솔루션</p>
+<p class="text-xl font-semibold" style="position: relative; transform: translate(735.736px, -493.515px);">도입 전후 비교 분석</p>
+</div>
+<div class="text-[#333333]">
+<p class="text-sm">www.directcloud.co.kr</p>
+</div>
+</div>
+</div>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('comparisonChart').getContext('2d');
+            const comparisonChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['IT 유지보수 비용', '시스템 다운타임', '임직원 협업 효율', 'AI 워크플로우 자동화'],
+                    datasets: [
+                        {
+                            label: '도입 전',
+                            data: [100, 100, 100, 100],
+                            backgroundColor: '#333333',
+                            borderWidth: 0
+                        },
+                        {
+                            label: '도입 후',
+                            data: [70, 20, 180, 250],
+                            backgroundColor: '#007BFF',
+                            borderWidth: 0
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 260,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            },
+                            ticks: {
+                                color: '#333333',
+                                font: {
+                                    family: 'Noto Sans KR'
+                                },
+                                callback: function(value) {
+                                    if (value === 100) return '기준치 (100%)';
+                                    return value + '%';
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            },
+                            ticks: {
+                                color: '#333333',
+                                font: {
+                                    family: 'Noto Sans KR'
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#333333',
+                                font: {
+                                    family: 'Noto Sans KR'
+                                }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Microsoft 365 & Azure 도입 전후 효과 비교',
+                            color: '#333333',
+                            font: {
+                                family: 'Noto Sans KR',
+                                size: 16,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>마이그레이션 전략 및 절차</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.03);
+        }
+        .main-title {
+            font-size: 3.2rem;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 1px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .phase-box {
+            background-color: #007BFF;
+            border-radius: 8px;
+            padding: 10px 20px;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .phase-box.active {
+            background-color: transparent;
+            border: 2px solid #007BFF;
+            color: #007BFF;
+        }
+        .text-dark {
+            color: #333333;
+        }
+        .text-primary {
+            color: #007BFF;
+        }
+        .header-text {
+            font-weight: 700;
+        }
+        .body-text {
+            font-weight: 400;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 120px;
+            object-fit: contain;
+        }
+        .phase-icon {
+            font-size: 2.5rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        .step-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .step-bullet {
+            min-width: 24px;
+            height: 24px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Header -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-cloud text-primary mr-3"></i>
+<span class="text-dark text-xl header-text">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex flex-col">
+<h1 class="main-title">마이그레이션 전략 및 절차</h1>
+<p class="text-dark text-sm mb-6 max-w-4xl body-text">
+    클라우드 마이그레이션은 단순한 시스템 이전이 아닌 비즈니스 혁신을 위한 전략적 여정입니다. Direct Cloud는 30년 경험을 바탕으로 한 체계적인 3단계 마이그레이션 프로세스로 고객의 안전하고 효율적인 클라우드 전환을 지원합니다.
+</p>
+<!-- Phases -->
+<div class="grid grid-cols-3 gap-8 mt-4">
+<!-- Phase 01 -->
+<div class="flex flex-col">
+<div class="flex justify-center mb-2">
+<div class="phase-icon">
+<i class="fas fa-search"></i>
+</div>
+</div>
+<div class="phase-box">
+    1단계: 진단 및 계획
+</div>
+<div class="mb-3">
+<div class="step-item">
+<div class="step-bullet">1</div>
+<span class="text-dark text-sm font-medium">현행 시스템 분석 및 자원 파악</span>
+</div>
+<div class="step-item">
+<div class="step-bullet">2</div>
+<span class="text-dark text-sm font-medium">마이그레이션 범위 및 목표 설정</span>
+</div>
+<div class="step-item">
+<div class="step-bullet">3</div>
+<span class="text-dark text-sm font-medium">리스크 평가 및 대응 전략 수립</span>
+</div>
+</div>
+<p class="text-dark text-sm body-text">
+    전문 컨설턴트의 진단을 통해 최적의 마이그레이션 계획을 수립합니다. 업무 연속성을 보장하며 단계적 마이그레이션으로 위험 요소를 최소화합니다.
+</p>
+</div>
+<!-- Phase 02 -->
+<div class="flex flex-col">
+<div class="flex justify-center mb-2">
+<div class="phase-icon">
+<i class="fas fa-exchange-alt"></i>
+</div>
+</div>
+<div class="phase-box active">
+    2단계: 구현 및 전환
+</div>
+<div class="mb-3">
+<div class="step-item">
+<div class="step-bullet">1</div>
+<span class="text-dark text-sm font-medium">테스트 환경 구성 및 검증</span>
+</div>
+<div class="step-item">
+<div class="step-bullet">2</div>
+<span class="text-dark text-sm font-medium">데이터 마이그레이션 실행</span>
+</div>
+<div class="step-item">
+<div class="step-bullet">3</div>
+<span class="text-dark text-sm font-medium">시스템 통합 및 사용자 테스트</span>
+</div>
+</div>
+<p class="text-dark text-sm body-text">
+    마이크로소프트 인증 엔지니어가 직접 수행하는 안전한 데이터 이전과 시스템 구축이 이루어집니다. 평균 99.9% 데이터 정확도와 다운타임 최소화 기술을 적용합니다.
+</p>
+</div>
+<!-- Phase 03 -->
+<div class="flex flex-col">
+<div class="flex justify-center mb-2">
+<div class="phase-icon">
+<i class="fas fa-rocket"></i>
+</div>
+</div>
+<div class="phase-box">
+    3단계: 최적화 및 지원
+</div>
+<div class="mb-3">
+<div class="step-item">
+<div class="step-bullet">1</div>
+<span class="text-dark text-sm font-medium">운영 안정화 및 성능 최적화</span>
+</div>
+<div class="step-item">
+<div class="step-bullet">2</div>
+<span class="text-dark text-sm font-medium">사용자 교육 및 변화관리 지원</span>
+</div>
+<div class="step-item">
+<div class="step-bullet">3</div>
+<span class="text-dark text-sm font-medium">지속적인 모니터링 및 개선</span>
+</div>
+</div>
+<p class="text-dark text-sm body-text">
+    마이그레이션 이후에도 Direct Cloud의 전담 기술지원팀이 24시간 모니터링 및 운영 최적화 서비스를 제공합니다. 분기별 성능 리포트 및 개선 제안이 포함됩니다.
+</p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="mt-auto flex justify-between items-center">
+<div class="text-dark">
+<p class="mb-1 text-sm opacity-80 body-text">마이그레이션 성공률</p>
+<p class="text-xl font-semibold header-text">99.7% (최근 3년간 5,000+ 프로젝트 기준)</p>
+</div>
+<div class="text-primary">
+<p class="text-sm body-text">www.directcloud.co.kr</p>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Direct Cloud - 회사 소개 및 연혁</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.1);
+        }
+        .positioning-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 1px;
+            color: #333333;
+        }
+        .strategy-box {
+            background-color: #007BFF;
+            border-radius: 4px;
+            height: auto;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+        }
+        .history-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .history-year {
+            font-weight: 700;
+            font-size: 1.1rem;
+            min-width: 70px;
+            color: #007BFF;
+        }
+        .history-content {
+            flex: 1;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .capacity-item {
+            background-color: rgba(0, 123, 255, 0.07);
+            border-left: 4px solid #007BFF;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+        }
+        .capacity-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Company Name -->
+<div class="mb-8">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="text-xl font-semibold" style="color: #333333; font-family: 'Noto Sans KR', sans-serif;">삼정데이타서비스 다이렉트클라우드</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex mb-4">
+<!-- Left Column - Company History -->
+<div class="w-1/2 pr-10">
+<h1 class="positioning-title mb-6">회사 연혁</h1>
+<div class="history-item">
+<div class="history-year">1992년</div>
+<div class="history-content">삼정데이타시스템 설립, 대한민국 IT 산업의 역사와 함께 성장</div>
+</div>
+<div class="history-item">
+<div class="history-year">1997년</div>
+<div class="history-content">삼정데이타서비스㈜ 법인 전환</div>
+</div>
+<div class="history-item">
+<div class="history-year">2001년</div>
+<div class="history-content">Microsoft Certified Partner (MCP) 등록, Microsoft와 파트너십 시작</div>
+</div>
+<div class="history-item">
+<div class="history-year">2013년</div>
+<div class="history-content">클라우드 전문 브랜드 '다이렉트클라우드' 론칭</div>
+</div>
+<div class="history-item">
+<div class="history-year">2014년</div>
+<div class="history-content">국내 최초 Microsoft Cloud Solution Provider (CSP) 파트너 선정</div>
+</div>
+<div class="history-item">
+<div class="history-year">2016년</div>
+<div class="history-content">메일나라 클라우드 V4.0 GS 인증 1등급 획득</div>
+</div>
+<div class="history-item">
+<div class="history-year">현재</div>
+<div class="history-content">국내 최다 Microsoft 365 고객사를 보유한 시장점유율 1위 CSP 파트너</div>
+</div>
+</div>
+<!-- Right Column - Core Capacities -->
+<div class="w-1/2">
+<h1 class="text-2xl font-bold mb-6" style="color: #333333;">핵심 역량</h1>
+<div class="capacity-item">
+<div class="capacity-title">독보적인 시장 리더십</div>
+<p class="text-sm">국내 최초이자 시장점유율 1위의 Microsoft CSP 파트너, 가장 많은 기업 고객이 다이렉트클라우드를 신뢰하고 선택</p>
+</div>
+<div class="capacity-item">
+<div class="capacity-title">검증된 전문성</div>
+<p class="text-sm">30년 이상의 IT 서비스 업력과 20년간 이어온 Microsoft와의 협업 경험, 국내 최다 Microsoft 365 메일 마이그레이션 경험</p>
+</div>
+<div class="capacity-item">
+<div class="capacity-title">프리미엄 기술 지원</div>
+<p class="text-sm">체계적인 프리미엄 기술 지원 서비스 제공, Microsoft 공인 커리큘럼 기반의 전문 교육, 24시간 장애 대응 체계</p>
+</div>
+<div class="capacity-item">
+<div class="capacity-title">합리적인 가격 정책</div>
+<p class="text-sm">Microsoft와의 직접적인 파트너십을 통해 국내 최저가 수준의 경쟁력 있는 가격으로 솔루션 공급</p>
+</div>
+</div>
+</div>
+<p class="text-center mt-4 text-sm italic text-gray-600">
+다이렉트클라우드는 단순한 리셀러가 아닌, 고객의 클라우드 여정 전반을 책임지는 기술 파트너입니다.
+</p>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Microsoft 365 솔루션</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.1);
+        }
+        .positioning-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: 2px;
+            color: #333333;
+        }
+        .strategy-box {
+            background-color: #007BFF;
+            border-radius: 4px;
+            height: 240px;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+        }
+        p {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .price-tag {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.85rem;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+        .feature-list li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: baseline;
+        }
+        .feature-list li i {
+            font-size: 0.7rem;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Company Name -->
+<div class="mb-10">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="text-xl font-semibold" style="color: #333333; font-family: 'Noto Sans KR', sans-serif;">삼정데이타서비스 다이렉트클라우드</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex mb-4">
+<!-- Left Column - Title -->
+<div class="w-1/2 pr-10">
+<h1 class="positioning-title mb-4">Microsoft<br>365<br>솔루션</h1>
+</div>
+<!-- Right Column - Description -->
+<div class="w-1/2">
+<p class="text-base" style="color: #333333; line-height: 1.6;">
+                Direct Cloud는 기업 규모와 비즈니스 요구사항에 최적화된 Microsoft 365 솔루션을 제공합니다. 국내 최저가로 제공되는 비즈니스 패키지부터 기업급 보안과 규정 준수 기능을 갖춘 엔터프라이즈 패키지, 그리고 혁신적인 AI 기능을 활용할 수 있는 Copilot까지, 귀사의 디지털 혁신을 위한 최적의 솔루션을 제안합니다.
+            </p>
+<div class="mt-4 text-sm text-blue-600">
+<div class="flex items-center mb-2">
+<i class="fas fa-check-circle mr-2"></i>
+<span>국내 최저가 보장</span>
+</div>
+<div class="flex items-center mb-2">
+<i class="fas fa-check-circle mr-2"></i>
+<span>기업 맞춤형 라이선스 컨설팅</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle mr-2"></i>
+<span>원활한 도입 및 마이그레이션 지원</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategy Boxes -->
+<div class="grid grid-cols-3 gap-6" style="position: relative;">
+<!-- Business Package -->
+<div class="strategy-box">
+<h3 class="strategy-title">비즈니스 패키지<span class="price-tag">월 6,500원~</span></h3>
+<ul class="feature-list list-none p-0 m-0">
+<li><i class="fas fa-check"></i> Business Basic: 월 6,500원 (할인가)</li>
+<li><i class="fas fa-check"></i> Business Standard: 월 13,900원 (할인가)</li>
+<li><i class="fas fa-check"></i> Business Premium: 고급 보안 기능 포함</li>
+<li><i class="fas fa-check"></i> 최대 300명까지 사용 가능</li>
+<li><i class="fas fa-check"></i> Office 앱, 메일, 클라우드 저장소, Teams 제공</li>
+<li><i class="fas fa-check"></i> 소규모~중견기업에 최적화된 솔루션</li>
+</ul>
+</div>
+<!-- Enterprise Package -->
+<div class="strategy-box">
+<h3 class="strategy-title">엔터프라이즈 패키지<span class="price-tag">E3/E5</span></h3>
+<ul class="feature-list list-none p-0 m-0">
+<li><i class="fas fa-check"></i> 대규모 조직 및 기업을 위한 솔루션</li>
+<li><i class="fas fa-check"></i> 향상된 보안 및 규정 준수 기능</li>
+<li><i class="fas fa-check"></i> 무제한 사용자 지원</li>
+<li><i class="fas fa-check"></i> E3: 핵심 생산성, 보안, 규정준수 기능</li>
+<li><i class="fas fa-check"></i> E5: 고급 보안, 분석, 음성 기능 추가</li>
+<li><i class="fas fa-check"></i> Azure AD Premium, Intune 통합 관리</li>
+</ul>
+</div>
+<!-- Microsoft 365 Copilot -->
+<div class="strategy-box">
+<h3 class="strategy-title">Microsoft 365 Copilot<span class="price-tag">AI 혁신</span></h3>
+<ul class="feature-list list-none p-0 m-0">
+<li><i class="fas fa-check"></i> Word, Excel, PowerPoint, Teams 통합 AI 지원</li>
+<li><i class="fas fa-check"></i> 비즈니스 데이터 기반 실시간 지원</li>
+<li><i class="fas fa-check"></i> 업무 자동화 및 생산성 향상 (최대 353% ROI)</li>
+<li><i class="fas fa-check"></i> 포괄적인 보안 및 개인정보 보호</li>
+<li><i class="fas fa-check"></i> 업무 문서 자동 생성 및 요약</li>
+<li><i class="fas fa-check"></i> 전사적 도입을 위한 맞춤형 교육 제공</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Azure 클라우드 서비스</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.1);
+        }
+        .positioning-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: 2px;
+            color: #333333;
+        }
+        .strategy-box {
+            background-color: #007BFF;
+            border-radius: 4px;
+            height: 240px;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+        }
+        p {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Company Name -->
+<div class="mb-10">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="text-xl font-semibold" style="color: #333333; font-family: 'Noto Sans KR', sans-serif;">삼정데이타서비스 다이렉트클라우드</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex mb-4">
+<!-- Left Column - Title -->
+<div class="w-1/2 pr-10">
+<h1 class="positioning-title mb-4">Azure<br>클라우드<br>서비스</h1>
+</div>
+<!-- Right Column - Description -->
+<div class="w-1/2">
+<p class="text-base" style="color: #333333; line-height: 1.6;">
+Microsoft Azure는 기업의 비즈니스를 위해 끊임없이 확장되는 세계 최대 규모의 글로벌 퍼블릭 클라우드 서비스입니다. Azure의 핵심 서비스를 통해 비즈니스 혁신, 운영 효율성 향상, 비용 절감을 실현하세요. 다이렉트클라우드는 Microsoft CSP 파트너로서 Azure 도입과 운영을 위한 최적의 지원을 제공합니다.
+</p>
+<div class="mt-4 text-sm text-blue-600">
+<div class="flex items-center mb-2">
+<i class="fas fa-check-circle mr-2"></i>
+<span>전 세계 54개 지역, 140개 국가에 서비스</span>
+</div>
+<div class="flex items-center mb-2">
+<i class="fas fa-check-circle mr-2"></i>
+<span>100개 이상의 서비스와 150개 이상의 커넥터</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle mr-2"></i>
+<span>광범위한 국제 및 업계별 규정 준수</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategy Boxes -->
+<div class="grid grid-cols-3 gap-6" style="position: relative;">
+<!-- Strategy Box 01 -->
+<div class="strategy-box">
+<h3 class="strategy-title">Azure Server</h3>
+<p class="text-sm" style="line-height: 1.6;">
+Windows, Linux, SQL, Oracle 가상머신을 단 몇 초 만에 구축할 수 있습니다. 365일 24시간 서버모니터링 및 장애 알림 서비스를 제공하며, 최저 비용의 독립형 서버와 전 세계 데이터센터로 시스템 확장이 가능합니다. Microsoft 솔루션 운영에 최적화된 서버 환경과 다양한 운영체제 및 오픈소스 환경을 지원합니다.
+</p>
+</div>
+<!-- Strategy Box 02 -->
+<div class="strategy-box">
+<h3 class="strategy-title">Azure Backup</h3>
+<p class="text-sm" style="line-height: 1.6;">
+단순하고 안정적인 클라우드 통합 BaaS(Backup as a Service) 솔루션입니다. 온-프레미스 및 클라우드에서 데이터 보호를 지원하는 통합 솔루션으로, 99.9% 가용성 SLA를 제공합니다. 랜섬웨어에 대비하고, 효율적인 증분 백업과 지리적으로 복제된 백업 저장소를 통해 기업의 중요 데이터를 안전하게 보호합니다.
+</p>
+</div>
+<!-- Strategy Box 03 -->
+<div class="strategy-box">
+<h3 class="strategy-title">Azure AI</h3>
+<p class="text-sm" style="line-height: 1.6;">
+사전 구축된 AI 모델과 맞춤형 AI 솔루션을 통해 비즈니스 혁신을 지원합니다. AI 모델의 손쉬운 배포 및 관리가 가능하며, 일관성 있는 독보적인 하이브리드 클라우드를 기반으로 원하는 위치에서 응용 프로그램을 개발하고 배포할 수 있습니다. 풍부한 Azure 데이터 및 AI 서비스로 인간과 유사한 인텔리전스를 구현하세요.
+</p>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MailnaraG 그룹웨어 솔루션 개요 및 핵심 기능</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .strategy-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .feature-box {
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 123, 255, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .company-text {
+            color: #007BFF;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .key-point {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px;
+            margin-top: 12px;
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .feature-icon {
+            flex-shrink: 0;
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(0, 123, 255, 0.1);
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-4">MailnaraG 그룹웨어 솔루션 개요 및 핵심 기능</h1>
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8">
+<p class="strategy-text mb-6">
+<span class="highlight">메일나라G</span>는 한국형 그룹웨어 솔루션으로, Microsoft Teams 기반으로 모든 업무를 한 곳에서 해결할 수 있는 원스톱 업무환경을 제공합니다. 다이렉트클라우드에서만 제공되는 <span class="highlight">팀즈 그룹웨어</span>로 국내 비즈니스 환경에 최적화되었습니다.
+</p>
+<div class="key-point mt-6 mb-6">
+<p class="text-lg font-semibold mb-2">핵심 기능</p>
+<div class="feature-item">
+<div class="feature-icon"><i class="fas fa-envelope"></i></div>
+<div>
+<p class="font-medium mb-1">이메일 및 일정관리</p>
+<p class="text-sm">Outlook과 메일나라 무제한 메일, 팀즈를 통한 일정 동기화로 원활한 협업 지원</p>
+</div>
+</div>
+<div class="feature-item">
+<div class="feature-icon"><i class="fas fa-file-alt"></i></div>
+<div>
+<p class="font-medium mb-1">파일 공유 및 협업</p>
+<p class="text-sm">SharePoint와 OneDrive를 통한 실시간 문서 공유 및 협업</p>
+</div>
+</div>
+<div class="feature-item">
+<div class="feature-icon"><i class="fas fa-video"></i></div>
+<div>
+<p class="font-medium mb-1">온라인 회의 및 채팅</p>
+<p class="text-sm">Teams를 통한 화상 회의, 채팅, 파일 공유 통합 솔루션</p>
+</div>
+</div>
+<div class="feature-item">
+<div class="feature-icon"><i class="fas fa-stamp"></i></div>
+<div>
+<p class="font-medium mb-1">전자결재 및 근태관리</p>
+<p class="text-sm">전자결재 시스템을 통한 업무 프로세스 간소화 및 근태관리 자동화</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column - Image -->
+<div class="w-1/2 pl-8 flex flex-col">
+<div class="feature-box flex-grow mb-4 p-6">
+<h3 class="text-xl font-bold mb-4 text-center">도입 효과</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-gray-50 rounded-lg">
+<div class="text-center mb-2"><i class="fas fa-bolt text-2xl text-blue-500"></i></div>
+<p class="text-center font-medium">협업 효율 30% 향상</p>
+</div>
+<div class="p-4 bg-gray-50 rounded-lg">
+<div class="text-center mb-2"><i class="fas fa-clock text-2xl text-blue-500"></i></div>
+<p class="text-center font-medium">결재 처리 시간 50% 단축</p>
+</div>
+<div class="p-4 bg-gray-50 rounded-lg">
+<div class="text-center mb-2"><i class="fas fa-search text-2xl text-blue-500"></i></div>
+<p class="text-center font-medium">업무 투명성 증대</p>
+</div>
+<div class="p-4 bg-gray-50 rounded-lg">
+<div class="text-center mb-2"><i class="fas fa-globe text-2xl text-blue-500"></i></div>
+<p class="text-center font-medium">원격 업무 환경 최적화</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center mt-4 mb-4">
+<img alt="메일나라G 그룹웨어 솔루션" class="max-h-48 object-contain" src="https://page.gensparksite.com/slides_images/4d327f74a3615f49539e8f698f42f546.png" data-height-listener-added="true">
+</div>
+<div class="key-point mt-auto">
+<p class="strategy-text mb-0">
+<span class="highlight">다이렉트클라우드만의 강점:</span> Microsoft 365와의 완벽한 통합으로 익숙한 환경에서 한국형 그룹웨어의 모든 기능을 편리하게 사용할 수 있습니다.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>그룹웨어와 M365 연동, 프리미엄 기술지원</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .analysis-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 900;
+            font-size: 52px;
+            line-height: 1.1;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .section-header {
+            color: #333333;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .plan-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0078d4;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .plan-title {
+            color: #0078d4;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .plan-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .plan-item {
+            background-color: rgba(0, 120, 212, 0.1);
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .support-feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .support-icon {
+            color: #0078d4;
+            margin-right: 10px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .process-step {
+            display: flex;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .step-number {
+            background-color: #0078d4;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-curve"></div>
+<!-- Company Logo/Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-sync-alt text-[#0078d4] mr-3"></i>
+<span class="text-[#333333] text-xl font-bold">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow">
+<div class="flex">
+<!-- Left Column -->
+<div class="w-1/2 pr-8">
+<h1 class="analysis-title mb-6">그룹웨어와<br>M365 연동</h1>
+<p class="text-[#333333] text-base mb-6">
+    메일나라G 그룹웨어는 다양한 Microsoft 365 플랜과 원활하게 연동되어 
+    기업에 최적화된 통합 협업 환경을 제공합니다.
+</p>
+<h3 class="section-header mb-3">다양한 M365 플랜 연결</h3>
+<div class="plan-box">
+<div class="plan-title">비즈니스</div>
+<div class="plan-items">
+<span class="plan-item">Microsoft 365 Basic</span>
+<span class="plan-item">Microsoft 365 Standard</span>
+<span class="plan-item">Microsoft 365 Premium</span>
+<span class="plan-item">Business App</span>
+</div>
+</div>
+<div class="plan-box">
+<div class="plan-title">엔터프라이즈</div>
+<div class="plan-items">
+<span class="plan-item">Office 365 E1</span>
+<span class="plan-item">Office 365 E3</span>
+<span class="plan-item">Office 365 E5</span>
+<span class="plan-item">Microsoft 365 E3</span>
+<span class="plan-item">Microsoft 365 E5</span>
+</div>
+</div>
+<div class="plan-box">
+<div class="plan-title">최전방</div>
+<div class="plan-items">
+<span class="plan-item">Microsoft 365 F1</span>
+<span class="plan-item">Microsoft 365 F3</span>
+</div>
+</div>
+<div class="mt-5">
+<p class="text-sm font-medium text-[#0078d4]">
+<i class="fas fa-info-circle mr-2"></i>모든 Microsoft 365 플랜은 메일나라G와 완벽하게 호환되며, 라이선스 유형에 따라 추가 기능이 제공됩니다.
+</p>
+</div>
+</div>
+<!-- Right Column -->
+<div class="w-1/2 pl-8">
+<h3 class="section-header mb-5">프리미엄 기술지원</h3>
+<div class="support-feature">
+<div class="support-icon">
+<i class="fas fa-headset fa-lg"></i>
+</div>
+<div>
+<strong class="text-[#0078d4]">MS솔루션 전문 기술지원팀</strong>
+<p class="text-sm mt-1">Microsoft 공인 전문가로 구성된 기술지원팀이 신속하게 문제를 해결하고 컨설팅을 제공합니다.</p>
+</div>
+</div>
+<div class="support-feature">
+<div class="support-icon">
+<i class="fas fa-sync fa-lg"></i>
+</div>
+<div>
+<strong class="text-[#0078d4]">자동 업데이트 및 유지보수</strong>
+<p class="text-sm mt-1">최신 보안 패치와 기능을 자동으로 적용하여 시스템을 항상 최상의 상태로 유지합니다.</p>
+</div>
+</div>
+<div class="support-feature">
+<div class="support-icon">
+<i class="fas fa-shield-alt fa-lg"></i>
+</div>
+<div>
+<strong class="text-[#0078d4]">데이터 암호화 및 보호</strong>
+<p class="text-sm mt-1">최고 수준의 암호화 기술과 보안 정책을 통해 중요 데이터를 안전하게 보호합니다.</p>
+</div>
+</div>
+<h3 class="section-header mt-6 mb-3">서비스 도입 프로세스</h3>
+<div class="process-step">
+<div class="step-number">1</div>
+<div>
+<strong>본인 이메일 확인</strong> - 신청자 정보와 이메일 주소 확인
+    </div>
+</div>
+<div class="process-step">
+<div class="step-number">2</div>
+<div>
+<strong>약관 동의 및 고객정보등록</strong> - 서비스 이용 약관 동의
+    </div>
+</div>
+<div class="process-step">
+<div class="step-number">3</div>
+<div>
+<strong>신청자 본인인증</strong> - 기업회원으로 전환
+    </div>
+</div>
+<div class="process-step">
+<div class="step-number">4</div>
+<div>
+<strong>이용료 결제</strong> - 12개월 선납 또는 월납 옵션 선택
+    </div>
+</div>
+<div class="process-step">
+<div class="step-number">5</div>
+<div>
+<strong>Microsoft 365 테넌트 등록</strong> - 신청 정보로 테넌트 셋업
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>경쟁 우위 분석</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .slide {
+        width: 1280px;
+        min-height: 720px;
+        background: #FFFFFF;
+        position: relative;
+        overflow: hidden;
+    }
+    .accent-shape {
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        background: rgba(0, 123, 255, 0.05);
+    }
+    .strategy-title {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+    .strategy-text {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #333333;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .company-text {
+        color: #007BFF;
+    }
+    .highlight {
+        color: #007BFF;
+        font-weight: 500;
+    }
+    .key-point {
+        background-color: #F8F9FA;
+        border-left: 4px solid #007BFF;
+        padding: 12px;
+        margin-top: 12px;
+    }
+    .advantage-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    .advantage-icon {
+        background-color: #007BFF;
+        color: #FFFFFF;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+    .advantage-text {
+        font-size: 1rem;
+    }
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+        font-size: 0.9rem;
+    }
+    .comparison-table th {
+        background-color: #007BFF;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+    }
+    .comparison-table td {
+        padding: 8px 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .comparison-table tr:nth-child(even) {
+        background-color: rgba(0, 123, 255, 0.05);
+    }
+    .comparison-table .feature-name {
+        text-align: left;
+        font-weight: 500;
+    }
+    .chart-container {
+        width: 100%;
+        height: 240px;
+        border-radius: 8px;
+        padding: 15px;
+        border: 1px solid rgba(0, 123, 255, 0.3);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    .yes-icon {
+        color: #007BFF;
+    }
+    .no-icon {
+        color: #dc3545;
+    }
+    .limited-icon {
+        color: #ffc107;
+    }
+    .directcloud-col {
+        background-color: rgba(0, 123, 255, 0.05);
+    }
+</style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-4">
+<div class="flex items-center">
+<i class="fas fa-chart-line text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-4">경쟁 우위 분석</h1>
+<div class="flex">
+<!-- Left Column - Text & Table -->
+<div class="w-1/2 pr-8">
+<p class="strategy-text mb-4">
+Direct Cloud는 <span class="highlight">국내 최초 Microsoft CSP 파트너</span>로서 일반 리셀러 및 타 클라우드 서비스 제공업체와 비교하여 다음과 같은 핵심 경쟁 우위를 제공합니다.
+</p>
+<table class="comparison-table">
+<thead>
+<tr>
+<th width="40%">주요 특징</th>
+<th class="directcloud-col" width="20%">Direct Cloud</th>
+<th width="20%">일반 리셀러</th>
+<th width="20%">타 CSP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="feature-name">Microsoft CSP 최초 파트너</td>
+<td class="directcloud-col"><i class="fas fa-check yes-icon"></i></td>
+<td><i class="fas fa-times no-icon"></i></td>
+<td><i class="fas fa-times no-icon"></i></td>
+</tr>
+<tr>
+<td class="feature-name">당일 라이선스 발급</td>
+<td class="directcloud-col"><i class="fas fa-check yes-icon"></i></td>
+<td><i class="fas fa-times no-icon"></i></td>
+<td><i class="fas fa-check-circle limited-icon"></i></td>
+</tr>
+<tr>
+<td class="feature-name">최대 30% 비용 절감</td>
+<td class="directcloud-col"><i class="fas fa-check yes-icon"></i></td>
+<td><i class="fas fa-times no-icon"></i></td>
+<td><i class="fas fa-check-circle limited-icon"></i></td>
+</tr>
+<tr>
+<td class="feature-name">Microsoft 직접 계약</td>
+<td class="directcloud-col"><i class="fas fa-check yes-icon"></i></td>
+<td><i class="fas fa-times no-icon"></i></td>
+<td><i class="fas fa-check yes-icon"></i></td>
+</tr>
+<tr>
+<td class="feature-name">1차 기술 지원 권한</td>
+<td class="directcloud-col"><i class="fas fa-check yes-icon"></i></td>
+<td><i class="fas fa-times no-icon"></i></td>
+<td><i class="fas fa-check yes-icon"></i></td>
+</tr>
+<tr>
+<td class="feature-name">통합 빌링 시스템</td>
+<td class="directcloud-col"><i class="fas fa-check yes-icon"></i></td>
+<td><i class="fas fa-check-circle limited-icon"></i></td>
+<td><i class="fas fa-check yes-icon"></i></td>
+</tr>
+<tr>
+<td class="feature-name">라이선스 최소 수량 1Copy</td>
+<td class="directcloud-col"><i class="fas fa-check yes-icon"></i></td>
+<td><i class="fas fa-times no-icon"></i></td>
+<td><i class="fas fa-check yes-icon"></i></td>
+</tr>
+</tbody>
+</table>
+<div class="key-point mt-4" style="position: relative; transform: translate(-0.907196px, -15.4223px);">
+<p class="strategy-text mb-0">
+<span class="highlight">시장점유율 1위 CSP 파트너:</span> Direct Cloud는 국내 최초 Microsoft CSP 파트너로서 국내 Microsoft 365 CSP 시장에서 점유율 1위를 기록하고 있습니다.
+</p>
+</div>
+</div>
+<!-- Right Column - Chart & Points -->
+<div class="w-1/2 pl-8" style="position: relative; transform: translate(-1.81439px, -45.3598px);">
+<div class="chart-container">
+<canvas id="marketShareChart" width="383" height="155" style="display: block; box-sizing: border-box; height: 207px; width: 511px;"></canvas>
+</div>
+<p class="text-sm text-gray-600 mb-4 text-center">
+출처: 국내 Microsoft 365 CSP 파트너 시장점유율 (2025년 1분기 기준)
+</p>
+<div class="mt-6">
+<h3 class="font-bold text-lg mb-3" style="color: #007BFF;">CSP 파트너십 핵심 차별화 요소</h3>
+<div class="advantage-item">
+<div class="advantage-icon">
+<i class="fas fa-bolt"></i>
+</div>
+<div class="advantage-text">
+<span class="font-bold">빠른 라이선스 관리:</span> 일반 리셀러는 1-2일 소요되는 라이선스 발급을 Direct Cloud는 <span class="highlight">당일 즉시</span> 처리
+</div>
+</div>
+<div class="advantage-item">
+<div class="advantage-icon">
+<i class="fas fa-money-bill-wave"></i>
+</div>
+<div class="advantage-text">
+<span class="font-bold">비용 효율성:</span> Microsoft와의 직접 계약으로 <span class="highlight">최대 30% 비용 절감</span> 및 중간 마진 제거
+</div>
+</div>
+<div class="advantage-item">
+<div class="advantage-icon">
+<i class="fas fa-headset"></i>
+</div>
+<div class="advantage-text">
+<span class="font-bold">프리미엄 지원:</span> CSP 파트너 전용 <span class="highlight">1차 기술 지원 권한</span>으로 신속한 문제 해결
+</div>
+</div>
+<div class="advantage-item">
+<div class="advantage-icon">
+<i class="fas fa-cubes"></i>
+</div>
+<div class="advantage-text">
+<span class="font-bold">유연한 구매:</span> <span class="highlight">최소 1Copy부터</span> 구매 가능 (OPEN 라이선스 최소 5Copy)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('marketShareChart').getContext('2d');
+    
+    const marketShareChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Direct Cloud', '경쟁사 A', '경쟁사 B', '경쟁사 C', '기타'],
+            datasets: [{
+                data: [42, 23, 18, 12, 5],
+                backgroundColor: [
+                    'rgba(0, 123, 255, 0.8)',
+                    'rgba(54, 162, 235, 0.5)',
+                    'rgba(75, 192, 192, 0.5)',
+                    'rgba(153, 102, 255, 0.5)',
+                    'rgba(201, 203, 207, 0.5)'
+                ],
+                borderColor: [
+                    'rgba(0, 123, 255, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(201, 203, 207, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: '국내 Microsoft 365 CSP 파트너 시장점유율',
+                    font: {
+                        size: 16
+                    }
+                },
+                legend: {
+                    position: 'right',
+                    labels: {
+                        font: {
+                            size: 12
+                        }
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ROI 및 비즈니스 효과</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .strategy-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .chart-container {
+            width: 100%;
+            height: 360px;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid rgba(0, 123, 255, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .company-text {
+            color: #007BFF;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .key-point {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px;
+            margin-top: 16px;
+        }
+        .data-point {
+            display: inline-block;
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 8px 16px;
+            margin: 8px 8px 0 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .roi-card {
+            background-color: #F8F9FA;
+            border-radius: 8px;
+            border-left: 4px solid #007BFF;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .roi-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-8">
+<div class="flex items-center">
+<i class="fas fa-chart-line text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="company-text text-xl">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-6">ROI 및 비즈니스 효과</h1>
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8" style="position: relative; transform: translate(-9.97915px, -19.9581px);">
+<p class="strategy-text mb-4">
+Microsoft 365와 Azure 클라우드 도입을 통해 귀사는 비용 절감과 생산성 향상이라는 두 가지 핵심 비즈니스 가치를 동시에 실현할 수 있습니다.
+</p>
+<div class="roi-card">
+<h3 class="font-semibold mb-2">Microsoft 365 Copilot의 투자수익률</h3>
+<p class="roi-value">최대 353% ROI</p>
+<p class="text-sm mt-1">Forrester Consulting 연구 결과, 중소기업 기준</p>
+</div>
+<div class="roi-card">
+<h3 class="font-semibold mb-2">Azure 클라우드 도입 효과</h3>
+<p class="roi-value">연간 IT 비용 30% 절감</p>
+<p class="text-sm mt-1">인프라 유지보수, 전력, 냉각 비용 포함</p>
+</div>
+<div class="roi-card">
+<h3 class="font-semibold mb-2">Azure 마이그레이션 효과</h3>
+<p class="roi-value">운영비용 37% 절감</p>
+<p class="text-sm mt-1">IDC 연구 결과, 3년간 운영비용 기준</p>
+</div>
+<div class="key-point mt-4" style="position: relative; transform: translate(614.171px, -687.655px);">
+<p class="strategy-text mb-0">
+<span class="highlight">정성적 효과:</span> 업무 자동화로 반복 작업 감소, 데이터 기반 의사결정 강화, 보안 위협 대응 능력 향상, 하이브리드 근무 환경 지원
+</p>
+</div>
+</div>
+<!-- Right Column - Chart -->
+<div class="w-1/2 pl-8">
+<div class="h-full flex flex-col justify-center" style="position: relative; transform: translate(5.44318px, -128.822px);">
+<div class="chart-container">
+<canvas id="roiChart" width="383" height="245" style="display: block; box-sizing: border-box; height: 327px; width: 511px;"></canvas>
+</div>
+<div class="flex justify-center mt-8" style="position: relative; transform: translate(-2.72159px, -25.4015px);">
+<div class="data-point">
+<span class="highlight">업무 생산성</span> 최대 2시간/일 향상
+</div>
+<div class="data-point">
+<span class="highlight">협업 효율성</span> 27% 증가
+</div>
+<div class="data-point">
+<span class="highlight">의사결정 속도</span> 35% 향상
+</div>
+</div>
+<p class="text-sm text-gray-600 mt-6 text-center">
+출처: Forrester Consulting, IDC 연구 보고서 (2025년 기준)
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('roiChart').getContext('2d');
+    
+    const roiChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Copilot ROI', 'Azure 연간 비용 절감', 'Azure 운영비용 절감', '업계 평균 IT 투자 ROI'],
+            datasets: [{
+                label: '투자 대비 효과 (%)',
+                data: [353, 30, 37, 15],
+                backgroundColor: [
+                    'rgba(0, 123, 255, 0.8)',
+                    'rgba(0, 123, 255, 0.6)',
+                    'rgba(0, 123, 255, 0.7)',
+                    'rgba(220, 220, 220, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(0, 123, 255, 1)',
+                    'rgba(0, 123, 255, 1)',
+                    'rgba(0, 123, 255, 1)',
+                    'rgba(200, 200, 200, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: '효과 (%)'
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Microsoft 365 & Azure 도입 효과 비교',
+                    font: {
+                        size: 16
+                    }
+                },
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+});
+</script>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body></html>
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>구축 방안 및 일정</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.1);
+        }
+        .positioning-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: 2px;
+            color: #333333;
+        }
+        .strategy-box {
+            background-color: #007BFF;
+            border-radius: 4px;
+            height: 240px;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+        }
+        p {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .timeline {
+            height: 20px;
+            background: #F8F9FA;
+            border-radius: 10px;
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .timeline-phase {
+            height: 20px;
+            position: absolute;
+            border-radius: 10px;
+        }
+        .phase1 {
+            width: 20%;
+            left: 0;
+            background-color: rgba(0, 123, 255, 0.3);
+        }
+        .phase2 {
+            width: 30%;
+            left: 20%;
+            background-color: rgba(0, 123, 255, 0.5);
+        }
+        .phase3 {
+            width: 25%;
+            left: 50%;
+            background-color: rgba(0, 123, 255, 0.7);
+        }
+        .phase4 {
+            width: 25%;
+            left: 75%;
+            background-color: rgba(0, 123, 255, 0.9);
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Company Name -->
+<div class="mb-10">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="text-xl font-semibold" style="color: #333333; font-family: 'Noto Sans KR', sans-serif;">삼정데이타서비스 다이렉트클라우드</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex mb-4">
+<!-- Left Column - Title -->
+<div class="w-1/2 pr-10">
+<h1 class="positioning-title mb-4">구축 방안<br>및 일정</h1>
+</div>
+<!-- Right Column - Description -->
+<div class="w-1/2">
+<p class="text-base" style="color: #333333; line-height: 1.6;">
+                Direct Cloud는 체계적이고 안정적인 마이그레이션 경험을 제공합니다. 고객 비즈니스 환경에 맞는 최적의 Microsoft 365 및 Azure 클라우드 구축을 위해 검증된 4단계 프로세스를 적용하며, 고객의 업무 중단 최소화와 성공적인 디지털 전환을 보장합니다.
+            </p>
+<div class="mt-6">
+<h3 class="font-bold text-lg mb-2">프로젝트 일정 개요</h3>
+<div class="timeline">
+<div class="timeline-phase phase1"></div>
+<div class="timeline-phase phase2"></div>
+<div class="timeline-phase phase3"></div>
+<div class="timeline-phase phase4"></div>
+</div>
+<div class="flex justify-between text-xs">
+<span>착수</span>
+<span>2주차</span>
+<span>6주차</span>
+<span>9주차</span>
+<span>12주차</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategy Boxes -->
+<div class="grid grid-cols-3 gap-6" style="position: relative;">
+<!-- Strategy Box 01 -->
+<div class="strategy-box">
+<h3 class="strategy-title">Phase 1: 환경분석 및 설계</h3>
+<p class="text-sm" style="line-height: 1.6;">
+                고객사의 현재 IT 인프라와 요구사항을 면밀히 분석하여 최적의 클라우드 환경 설계를 진행합니다. 기존 시스템 분석, 요구사항 정의, 마이그레이션 범위 설정, 라이선스 계획, 네트워크 및 보안 구성 설계를 포함합니다. 이 단계에서 위험 요소를 식별하고 대응 계획을 수립하여 성공적인 마이그레이션의 토대를 마련합니다.
+            </p>
+</div>
+<!-- Strategy Box 02 -->
+<div class="strategy-box">
+<h3 class="strategy-title">Phase 2: 구축 및 마이그레이션</h3>
+<p class="text-sm" style="line-height: 1.6;">
+                설계 단계에서 수립한 계획을 바탕으로 Microsoft 365 및 Azure 환경을 구축하고 데이터 마이그레이션을 수행합니다. Exchange 메일, SharePoint 문서, 사용자 계정 및 권한 설정, 보안 정책 적용 등을 단계적으로 진행합니다. 업무 연속성을 보장하기 위해 마이그레이션은 주로 비업무 시간에 수행되며, 진행 상황을 실시간으로 모니터링합니다.
+            </p>
+</div>
+<!-- Strategy Box 03 -->
+<div class="strategy-box">
+<h3 class="strategy-title">Phase 3 &amp; 4: 테스트/안정화 및 교육/운영이관</h3>
+<p class="text-sm" style="line-height: 1.6;">
+                구축된 환경에 대한 철저한 테스트와 안정화 작업을 수행합니다. 사용자 접근성, 데이터 무결성, 보안 정책 검증, 성능 테스트를 통해 시스템의 안정성을 보장합니다. 이후 사용자 교육과 관리자 교육을 통해 새로운 환경에 대한 적응을 지원하고, 표준 운영 절차와 관리 지침을 제공하여 원활한 운영 이관을 완료합니다.
+            </p>
+</div>
+</div>
+<!-- Risk Management -->
+<div class="mt-6">
+<h3 class="font-bold text-lg mb-2">위험 관리 방안</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-gray-100 p-3 rounded-md">
+<div class="flex items-center mb-1">
+<i class="fas fa-shield-alt mr-2" style="color: #007BFF;"></i>
+<span class="font-semibold">데이터 손실 위험</span>
+</div>
+<p class="text-xs">마이그레이션 전 전체 데이터 백업 및 롤백 계획 수립</p>
+</div>
+<div class="bg-gray-100 p-3 rounded-md">
+<div class="flex items-center mb-1">
+<i class="fas fa-clock mr-2" style="color: #007BFF;"></i>
+<span class="font-semibold">업무 중단 최소화</span>
+</div>
+<p class="text-xs">단계적 마이그레이션 및 비업무 시간 활용</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+<!DOCTYPE html>
+
+<html data-theme="light" lang="ko" style="">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>기술 지원 및 운영 서비스</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .curve {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.1);
+        }
+        .positioning-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: 2px;
+            color: #333333;
+        }
+        .strategy-box {
+            background-color: #007BFF;
+            border-radius: 4px;
+            height: 240px;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+        }
+        p {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Company Name -->
+<div class="mb-10">
+<div class="flex items-center">
+<i class="fas fa-cloud text-blue-500 mr-3" style="color: #007BFF;"></i>
+<span class="text-xl font-semibold" style="color: #333333; font-family: 'Noto Sans KR', sans-serif;">삼정데이타서비스 다이렉트클라우드</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex mb-4">
+<!-- Left Column - Title -->
+<div class="w-1/2 pr-10">
+<h1 class="positioning-title mb-4">기술 지원<br/>및 운영<br/>서비스</h1>
+</div>
+<!-- Right Column - Description -->
+<div class="w-1/2">
+<p class="text-base" style="color: #333333; line-height: 1.6;">
+                Direct Cloud는 단순한 클라우드 솔루션 공급을 넘어 고객의 비즈니스 성공을 위한 포괄적인 지원 서비스를 제공합니다. Microsoft 클라우드 환경에 특화된 전문 기술지원팀이 구축부터 운영까지 고객의 모든 여정을 함께합니다. 24시간 장애 대응 체계와 프리미엄 기술지원으로 고객이 비즈니스 핵심에만 집중할 수 있는 환경을 만들어드립니다.
+            </p>
+<div class="mt-4 text-sm text-blue-600">
+<div class="flex items-center mb-2">
+<i class="fas fa-headset mr-2"></i>
+<span>전담 엔지니어 배정 시스템</span>
+</div>
+<div class="flex items-center mb-2">
+<i class="fas fa-shield-alt mr-2"></i>
+<span>24시간 모니터링 및 장애 대응</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-award mr-2"></i>
+<span>국내 최대 Microsoft 클라우드 전문가 보유</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategy Boxes -->
+<div class="grid grid-cols-3 gap-6" style="position: relative;">
+<!-- Strategy Box 01 -->
+<div class="strategy-box">
+<h3 class="strategy-title">교육 및 구축 지원</h3>
+<p class="text-sm" style="line-height: 1.6;">
+                Microsoft 공인 커리큘럼 기반의 맞춤형 교육 프로그램을 제공합니다. 기업용 솔루션 전문 교육을 통해 고객사 담당자의 역량을 강화하고, 클라우드 전환 과정에서 필요한 기술적 지식을 전수합니다. 또한 초기 환경 구성부터 데이터 마이그레이션까지 안정적인 구축을 위한 원스톱 서비스를 지원합니다.
+            </p>
+</div>
+<!-- Strategy Box 02 -->
+<div class="strategy-box">
+<h3 class="strategy-title">실시간 상담 서비스</h3>
+<p class="text-sm" style="line-height: 1.6;">
+                산업군별 표준 업무프로세스에 대한 이해를 바탕으로 전문 컨설턴트가 실시간 1:1 상담 서비스를 제공합니다. 다양한 채널(전화, 이메일, 실시간 채팅)을 통한 빠른 대응과 글로벌 표준 업무 적용으로 고객의 요구사항에 즉시 대응합니다. 해외 파트너와의 업무 연계도 원활하게 지원합니다.
+            </p>
+</div>
+<!-- Strategy Box 03 -->
+<div class="strategy-box">
+<h3 class="strategy-title">통합 유지보수 서비스</h3>
+<p class="text-sm" style="line-height: 1.6;">
+                체계적인 유지보수 관리 시스템을 기반으로 안정적인 클라우드 환경을 유지합니다. 원격지원을 통한 신속한 기술지원 서비스와 24시간 장애 감지 및 대응 체계를 구축하여 서비스 중단 시간을 최소화합니다. 정기적인 보안 업데이트와 성능 최적화 컨설팅을 통해 시스템의 안정성과 효율성을 극대화합니다.
+            </p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html data-theme="light" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>성공 사례 및 레퍼런스</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-shape {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .strategy-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .strategy-text {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333333;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .company-text {
+            color: #007BFF;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: 500;
+        }
+        .key-point {
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 12px;
+            margin-top: 16px;
+        }
+        .data-point {
+            display: inline-block;
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+            padding: 8px 16px;
+            margin: 8px 8px 0 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .success-case {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            background-color: #F8F9FA;
+            border-left: 4px solid #007BFF;
+        }
+        .success-case h3 {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+        .success-metrics {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .metric {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 123, 255, 0.05);
+            border-radius: 8px;
+            width: 30%;
+        }
+        .metric-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #007BFF;
+        }
+        .metric-label {
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="accent-shape"></div>
+<!-- Company Name -->
+<div class="mb-8">
+<div class="flex items-center">
+
+<span class="company-text text-xl" style="position: relative; transform: translate(0px, -31.7519px);">Direct Cloud - 삼정데이타서비스</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow flex">
+<div class="w-full">
+<h1 class="strategy-title mb-6" style="position: relative; transform: translate(-21.7727px, -70.7613px);">성공 사례 및 레퍼런스</h1>
+<div class="flex">
+<!-- Left Column - Text -->
+<div class="w-1/2 pr-8" style="position: relative; transform: translate(-16.3295px, -66.2244px);">
+<p class="strategy-text mb-4">
+Direct Cloud는 다양한 산업군의 5만여 기업에 Microsoft 365 및 Azure 클라우드 솔루션을 성공적으로 구축했습니다. 고객사들은 안정적인 인프라 구축, 보안 강화, 비용 절감 등의 효과를 얻고 있습니다.
+</p>
+<div class="success-case">
+<h3><i class="fas fa-building mr-2"></i> A 제조기업</h3>
+<p class="strategy-text mb-2">
+<span class="highlight">도입 솔루션:</span> Microsoft 365 E3, Azure Server
+</p>
+<ul class="list-disc pl-6">
+<li class="mb-1">안정적인 이메일 시스템 구축</li>
+<li class="mb-1">랜섬웨어 예방 체계 구축</li>
+<li class="mb-1">100GB 대용량 사서함 활용</li>
+<li>IT 인프라 강화로 업무 생산성 30% 향상</li>
+</ul>
+</div>
+<div class="success-case">
+<h3><i class="fas fa-graduation-cap mr-2"></i> B 교육기관</h3>
+<p class="strategy-text mb-2">
+<span class="highlight">도입 솔루션:</span> Microsoft 365 Business Premium, Teams
+</p>
+<ul class="list-disc pl-6">
+<li class="mb-1">다양한 교육용 서비스 통합 활용</li>
+<li class="mb-1">보안 및 컴플라이언스 강화</li>
+<li class="mb-1">AD 분리로 관리 효율성 증대</li>
+<li>원활한 커뮤니케이션 환경 구축</li>
+</ul>
+</div>
+<div class="key-point mt-6" style="position: relative; transform: translate(644.11px, -122.471px);">
+<p class="strategy-text mb-0">
+<span class="highlight">97% 고객 만족도:</span> 설문 조사 결과 97%의 고객이 Direct Cloud의 서비스에 만족했으며, 특히 빠른 구축 시간과 전문적인 기술지원에 높은 평가를 주었습니다.
+</p>
+</div>
+</div>
+<!-- Right Column - More success cases -->
+<div class="w-1/2 pl-8" style="position: relative; transform: translate(24.4943px, -211.377px);">
+<div class="h-full flex flex-col">
+<div class="success-case">
+<h3><i class="fas fa-chart-line mr-2"></i> C 금융기업</h3>
+<p class="strategy-text mb-2">
+<span class="highlight">도입 솔루션:</span> Microsoft 365 E5, Azure Backup, Azure AI
+</p>
+<ul class="list-disc pl-6">
+<li class="mb-1">단일 플랫폼으로 글로벌 경쟁력 향상</li>
+<li class="mb-1">데이터 보안 및 거버넌스 강화</li>
+<li class="mb-1">업무 프로세스 자동화를 통한 25% 효율 증대</li>
+<li>랜섬웨어 공격 대비 99.9% 가용성 달성</li>
+</ul>
+</div>
+<div class="success-case">
+<h3><i class="fas fa-store mr-2"></i> D 유통기업</h3>
+<p class="strategy-text mb-2">
+<span class="highlight">도입 솔루션:</span> Microsoft Teams, Exchange, SharePoint
+</p>
+<ul class="list-disc pl-6">
+<li class="mb-1">빠르고 원활한 의사소통 체계 구축</li>
+<li class="mb-1">국내외 지점 간 손쉬운 문서 공유</li>
+<li class="mb-1">모바일 업무 환경 구축으로 현장 대응력 강화</li>
+<li>IT 유지보수 비용 35% 절감</li>
+</ul>
+</div>
+<div class="success-metrics mt-6" style="position: relative; transform: translate(0.907196px, -29.9375px);">
+<div class="metric">
+<div class="metric-number">5만+</div>
+<div class="metric-label">고객사 수</div>
+</div>
+<div class="metric">
+<div class="metric-number">97%</div>
+<div class="metric-label">고객 만족도</div>
+</div>
+<div class="metric">
+<div class="metric-number">30%</div>
+<div class="metric-label">평균 비용 절감</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+<!DOCTYPE html>
+<html lang="ko" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Direct Cloud Microsoft 365 &amp; Azure 클라우드 솔루션 제안서 - 결론</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .slide {
+        width: 1280px;
+        height: 720px;
+        background: #FFFFFF;
+        position: relative;
+        overflow: hidden;
+    }
+    .curve {
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        background: rgba(0, 123, 255, 0.03);
+    }
+    .conclusion-title {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 1px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+    .highlight-box {
+        background-color: #F8F9FA;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        border-left: 4px solid #007BFF;
+    }
+    .highlight-box-title {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #007BFF;
+    }
+    .company-name {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #333333;
+        font-weight: 500;
+    }
+    .body-text {
+        color: #333333;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 1.6;
+    }
+    .next-steps-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .next-steps-list li {
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .next-steps-list li i {
+        color: #007BFF;
+        margin-right: 10px;
+        margin-top: 4px;
+    }
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .contact-info i {
+        color: #007BFF;
+        margin-right: 10px;
+    }
+    .value-point {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 12px;
+    }
+    .value-point i {
+        color: #007BFF;
+        margin-right: 10px;
+        margin-top: 4px;
+    }
+</style>
+</head>
+<body style="">
+<div class="slide flex flex-col p-16">
+<div class="curve"></div>
+<!-- Company Logo/Name -->
+<div class="mb-6">
+<div class="flex items-center">
+<i class="fas fa-cloud text-[#007BFF] mr-3"></i>
+<span class="company-name text-xl">삼정데이타서비스 다이렉트클라우드</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow">
+<h1 class="conclusion-title">제안 요약 및</h1><h1 class="conclusion-title">&nbsp;Next Steps</h1>
+<div class="flex">
+<!-- Left Column - Summary and Image -->
+<div class="w-1/2 pr-8" style="position: relative; transform: translate(-7.25757px, 113.4px);">
+<p class="body-text text-lg mb-6" style="position: relative; transform: translate(0.907196px, -97.9772px);">
+    Direct Cloud는 30년 이상의 IT 서비스 경험과 Microsoft 파트너십을 바탕으로 고객사의 디지털 혁신을 위한 최적의 클라우드 솔루션을 제공합니다. Microsoft 365와 Azure를 통해 업무 효율성을 극대화하고 비용은 최소화하는 최고의 선택이 되겠습니다.
+</p>
+<div class="mb-8">
+<div class="value-point">
+<i class="fas fa-medal text-lg"></i>
+<span><strong>30년 이상의 IT 서비스 경험</strong> - 1992년 설립, 안정적인 서비스</span>
+</div>
+<div class="value-point">
+<i class="fas fa-award text-lg"></i>
+<span><strong>Microsoft CSP 최초 파트너</strong> - 20년 이상의 MS 협업 경험</span>
+</div>
+<div class="value-point">
+<i class="fas fa-chart-line text-lg"></i>
+<span><strong>최대 353% ROI 달성</strong> - Copilot 도입 시 비즈니스 성과</span>
+</div>
+<div class="value-point">
+<i class="fas fa-users text-lg"></i>
+<span><strong>5만 고객사 레퍼런스</strong> - 국내 시장점유율 1위 CSP 파트너</span>
+</div>
+</div>
+<div class="contact-info">
+<i class="fas fa-phone-alt"></i>
+<span class="mr-6">02-2029-0365</span>
+<i class="fas fa-envelope"></i>
+<span>consulting@sds.co.kr</span>
+</div>
+</div>
+<!-- Right Column - Next Steps -->
+<div class="w-1/2 pl-8" style="position: relative; transform: translate(19.0511px, -134.265px);">
+<!-- Next Steps Box -->
+<div class="highlight-box mb-6" style="position: relative; transform: translate(-1.81439px, -135.172px);">
+<h3 class="highlight-box-title">Next Steps 진행 절차</h3>
+<ul class="next-steps-list">
+<li>
+<i class="fas fa-handshake"></i>
+<div>
+<strong>1단계: 무료 컨설팅</strong><br>
+<span class="text-sm">귀사의 현재 환경 분석 및 최적의 클라우드 도입 방안 상담</span>
+</div>
+</li>
+<li>
+<i class="fas fa-clipboard-list"></i>
+<div>
+<strong>2단계: 상세 제안 및 견적</strong><br>
+<span class="text-sm">맞춤형 라이선스 구성 및 기술 지원 방안 제시</span>
+</div>
+</li>
+<li>
+<i class="fas fa-file-signature"></i>
+<div>
+<strong>3단계: 계약 체결</strong><br>
+<span class="text-sm">서비스 범위 및 SLA 확정, 라이선스 제공</span>
+</div>
+</li>
+<li>
+<i class="fas fa-rocket"></i>
+<div>
+<strong>4단계: 구축 및 운영</strong><br>
+<span class="text-sm">전문 기술팀의 마이그레이션 지원 및 안정적 운영</span>
+</div>
+</li>
+</ul>
+</div>
+<!-- Special Offer Box -->
+<div class="highlight-box" style="position: relative; transform: translate(0.907196px, -127.007px);">
+<h3 class="highlight-box-title">특별 제안</h3>
+<p class="text-base body-text">
+<strong>최초 계약 고객 특별 혜택</strong><br>
+    • Microsoft 365 3개월 무료 체험<br>
+    • Azure 50만원 크레딧 제공<br>
+    • 무료 마이그레이션 컨설팅 (1회)<br>
+    • Copilot 도입 교육 무상 제공
+</p>
+<p class="mt-3 text-sm">
+    * 본 제안은 2025년 9월 30일까지 유효합니다.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div><div class="stephow-hover-overlay" style="opacity: 0;"></div><div id="guideflo-extension-unique-identifier" style="display: none;"></div></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar></html>
+
+
+

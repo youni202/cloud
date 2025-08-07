@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>구축 방안 및 일정</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 732px; font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 732px;
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .title-bar {
+            background-color: #0078D4;
+            height: 90px;
+            padding: 0 40px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content-area {
+            padding: 20px 40px;
+        }
+        .phase-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .phase-card:hover {
+            transform: translateY(-5px);
+        }
+        .phase-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .timeline-connector {
+            height: 3px;
+            background-color: #0078D4;
+            position: absolute;
+            top: 25px;
+            z-index: 0;
+        }
+        .risk-item {
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide">
+<!-- Title Bar -->
+<div class="title-bar flex items-center">
+<h1>구축 방안 및 일정</h1>
+</div>
+<!-- Content Area -->
+<div class="content-area">
+<!-- Phased Implementation Plan -->
+<div class="mb-5">
+<h2 class="text-xl font-semibold mb-3 flex items-center">
+<i class="fas fa-tasks text-blue-600 mr-2"></i>단계별 구축 계획
+                </h2>
+<div class="relative">
+<!-- Timeline connector -->
+<div class="timeline-connector" style="left: 50px; right: 50px;"></div>
+<!-- Phases -->
+<div class="flex justify-between space-x-4 relative z-10">
+<!-- Phase 1 -->
+<div class="w-1/4 px-2">
+<div class="phase-card p-4">
+<div class="phase-icon bg-blue-600 mx-auto">
+<i class="fas fa-search text-xl"></i>
+</div>
+<h3 class="font-bold text-center mb-2">Phase 1</h3>
+<h4 class="text-blue-600 font-medium text-center mb-2">환경 분석 및 설계</h4>
+<ul class="text-sm space-y-1">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>As-Is 분석 및 요구사항 정의</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>To-Be 아키텍처 설계</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>마이그레이션 전략 수립</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="w-1/4 px-2">
+<div class="phase-card p-4">
+<div class="phase-icon bg-green-600 mx-auto">
+<i class="fas fa-cogs text-xl"></i>
+</div>
+<h3 class="font-bold text-center mb-2">Phase 2</h3>
+<h4 class="text-green-600 font-medium text-center mb-2">시스템 구축 및 마이그레이션</h4>
+<ul class="text-sm space-y-1">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>Microsoft 365/Azure 계정 생성</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>보안 및 네트워크 구성</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>데이터 마이그레이션 실행</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="w-1/4 px-2">
+<div class="phase-card p-4">
+<div class="phase-icon bg-orange-500 mx-auto">
+<i class="fas fa-vial text-xl"></i>
+</div>
+<h3 class="font-bold text-center mb-2">Phase 3</h3>
+<h4 class="text-orange-500 font-medium text-center mb-2">테스트 및 안정화</h4>
+<ul class="text-sm space-y-1">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>사용자 수용 테스트(UAT)</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>성능 및 보안 테스트</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>최종 점검 및 이슈 해결</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="w-1/4 px-2">
+<div class="phase-card p-4">
+<div class="phase-icon bg-purple-600 mx-auto">
+<i class="fas fa-graduation-cap text-xl"></i>
+</div>
+<h3 class="font-bold text-center mb-2">Phase 4</h3>
+<h4 class="text-purple-600 font-medium text-center mb-2">교육 및 운영 이관</h4>
+<ul class="text-sm space-y-1">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>사용자 및 관리자 교육</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>운영 매뉴얼 제공</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mr-1 mt-1 flex-shrink-0"></i>
+<span>기술 지원 체계 이관</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Education/Change Management and Risk Management -->
+<div class="grid grid-cols-2 gap-6">
+<!-- Education/Change Management -->
+<div class="bg-white p-5 rounded-lg shadow">
+<h2 class="text-xl font-semibold mb-3 flex items-center">
+<i class="fas fa-chalkboard-teacher text-green-600 mr-2"></i>교육 및 변화관리
+                    </h2>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<h3 class="font-medium text-blue-600 mb-2">맞춤형 교육 프로그램</h3>
+<ul class="text-sm space-y-1">
+<li class="flex items-start">
+<i class="fas fa-user-friends text-blue-500 mr-2 mt-1"></i>
+<span>일반 사용자 교육</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-user-shield text-blue-500 mr-2 mt-1"></i>
+<span>IT 관리자 교육</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-robot text-blue-500 mr-2 mt-1"></i>
+<span>Copilot 활용 교육</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-medium text-blue-600 mb-2">지원 방안</h3>
+<ul class="text-sm space-y-1">
+<li class="flex items-start">
+<i class="fas fa-book text-blue-500 mr-2 mt-1"></i>
+<span>Microsoft 공인 커리큘럼</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-users text-blue-500 mr-2 mt-1"></i>
+<span>온라인 웨비나 및 집체 교육</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-bullhorn text-blue-500 mr-2 mt-1"></i>
+<span>내부 홍보 지원</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-user-tie text-blue-500 mr-2 mt-1"></i>
+<span>핵심 사용자(Power User) 양성</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Risk Management -->
+<div class="bg-white p-5 rounded-lg shadow">
+<h2 class="text-xl font-semibold mb-3 flex items-center">
+<i class="fas fa-shield-alt text-red-600 mr-2"></i>위험 관리 방안
+                    </h2>
+<div class="mb-4">
+<div class="flex justify-between mb-2">
+<span class="text-sm font-medium">위험 요소</span>
+<span class="text-sm font-medium">관리 방안</span>
+</div>
+<div class="risk-item bg-red-50 border-l-4 border-red-400">
+<div class="flex justify-between">
+<span class="font-medium">데이터 마이그레이션 위험</span>
+<span class="text-sm">구분된 데이터 마이그레이션 스트레티지 및 테스트</span>
+</div>
+</div>
+<div class="risk-item bg-yellow-50 border-l-4 border-yellow-400">
+<div class="flex justify-between">
+<span class="font-medium">사용자 적응성</span>
+<span class="text-sm">맞춤형 교육 및 지속적인 Q&amp;A 채널 운영</span>
+</div>
+</div>
+<div class="risk-item bg-blue-50 border-l-4 border-blue-400">
+<div class="flex justify-between">
+<span class="font-medium">시스템 호환성</span>
+<span class="text-sm">컴파일테스트 및 호환성 검증</span>
+</div>
+</div>
+<div class="risk-item bg-purple-50 border-l-4 border-purple-400">
+<div class="flex justify-between">
+<span class="font-medium">보안 및 규정 준수</span>
+<span class="text-sm">Microsoft Entra ID 및 Purview 구현</span>
+</div>
+</div>
+</div>
+<div class="text-center text-sm text-gray-600 italic">
+<i class="fas fa-info-circle mr-1"></i>상기 일정 및 내용은 고객사와의 협의를 통해 조정될 수 있습니다.
+                    </div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-4 right-6 text-gray-500 text-sm">
+<p>Page 8 of 12</p>
+</div>
+</div>
+
+
+</body></html>

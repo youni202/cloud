@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Azure 클라우드 서비스 제안</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 720px; font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .title-bar {
+            background-color: #0078D4;
+            height: 90px;
+            padding: 0 40px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content-area {
+            padding: 30px 40px;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .azure-server {
+            background-color: #f0f7ff;
+            color: #0078D4;
+        }
+        .azure-backup {
+            background-color: #f0f9ff;
+            color: #0078D4;
+        }
+        .azure-ai {
+            background-color: #f0f9ff;
+            color: #0078D4;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .feature-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #f0f7ff;
+            color: #0078D4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .highlight {
+            color: #0078D4;
+            font-weight: 600;
+        }
+        .cloud-pattern {
+            position: absolute;
+            opacity: 0.05;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="slide">
+<!-- Background Pattern -->
+<div class="cloud-pattern top-0 right-0">
+<i class="fas fa-cloud text-9xl"></i>
+</div>
+<div class="cloud-pattern bottom-0 left-0">
+<i class="fas fa-cloud text-9xl"></i>
+</div>
+<!-- Title Bar -->
+<div class="title-bar flex items-center">
+<h1>Azure 클라우드 서비스 제안</h1>
+</div>
+<!-- Content Area -->
+<div class="content-area">
+<div class="mb-6">
+<p class="text-center text-lg">Microsoft Azure는 기업의 모든 IT 요구사항을 충족하는 유연하고 확장 가능한 클라우드 플랫폼입니다.</p>
+</div>
+<div class="grid grid-cols-3 gap-6 h-3/4">
+<!-- Azure Server -->
+<div class="service-card p-6 flex flex-col">
+<div class="icon-container azure-server">
+<i class="fas fa-server text-4xl"></i>
+</div>
+<h2 class="text-xl font-bold text-center mb-4">Azure Server</h2>
+<div class="space-y-3 flex-grow">
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fab fa-windows"></i>
+</div>
+<p>Windows, Linux 등 다양한 운영체제 지원</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-database"></i>
+</div>
+<p>SQL, Oracle 등 주요 데이터베이스 구축</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<p>사용한 만큼만 비용을 지불하는 종량제 모델</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-expand-arrows-alt"></i>
+</div>
+<p>비즈니스 수요에 따라 유연하게 확장/축소</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-gray-200">
+<p class="text-sm text-gray-600 italic">
+<i class="fas fa-lightbulb text-yellow-500 mr-1"></i>
+                            초기 투자 비용 최소화하고 비즈니스 성장에 맞춰 인프라를 유연하게 조정할 수 있습니다.
+                        </p>
+</div>
+</div>
+<!-- Azure Backup -->
+<div class="service-card p-6 flex flex-col">
+<div class="icon-container azure-backup">
+<i class="fas fa-shield-alt text-4xl"></i>
+</div>
+<h2 class="text-xl font-bold text-center mb-4">Azure Backup</h2>
+<div class="space-y-3 flex-grow">
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-check-circle"></i>
+</div>
+<p><span class="highlight">99.9%</span>의 가용성 SLA 보장</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-virus-slash"></i>
+</div>
+<p>랜섬웨어를 비롯한 각종 데이터 위협 방어</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-tasks"></i>
+</div>
+<p>간단한 설정으로 온프레미스 및 클라우드 환경 데이터 백업</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-sync-alt"></i>
+</div>
+<p>신속한 데이터 복구 및 재covery</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-gray-200">
+<p class="text-sm text-gray-600 italic">
+<i class="fas fa-lightbulb text-yellow-500 mr-1"></i>
+                            기업의 핵심 자산을 안전하게 보호하고, 데이터 유출 및 손실에 대비한 신뢰할 수 있는 백업 솔루션입니다.
+                        </p>
+</div>
+</div>
+<!-- Azure AI -->
+<div class="service-card p-6 flex flex-col">
+<div class="icon-container azure-ai">
+<i class="fas fa-robot text-4xl"></i>
+</div>
+<h2 class="text-xl font-bold text-center mb-4">Azure AI</h2>
+<div class="space-y-3 flex-grow">
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-brain"></i>
+</div>
+<p>사전 구축된 다양한 AI 모델 제공</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-cogs"></i>
+</div>
+<p>맞춤형 솔루션 개발 도구</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-chart-pie"></i>
+</div>
+<p>데이터 기반의 지능형 의사결정</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-lightbulb"></i>
+</div>
+<p>고객 행동 예측, 수요 예측, 불량 탐지 등</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-gray-200">
+<p class="text-sm text-gray-600 italic">
+<i class="fas fa-lightbulb text-yellow-500 mr-1"></i>
+                            복잡한 개발 과정 없이도 AI 기술을 비즈니스에 쉽게 적용할 수 있는 솔루션입니다.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-4 right-6 text-gray-500 text-sm">
+<p>Page 7 of 12</p>
+</div>
+</div>
+</div>
+
+</body></html>

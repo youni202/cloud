@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그룹웨어 주요 기능 소개</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { width: 1280px; min-height: 720px; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+        .slide { width: 1280px; min-height: 720px; position: relative; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .title-bar { background-color: #0078D4; height: 90px; padding: 0 40px; color: white; font-size: 24px; font-weight: 600; }
+        .content-area { padding: 30px 40px; }
+        .feature-card { background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center; transition: all 0.3s ease; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); }
+        .feature-icon { font-size: 2rem; color: #0078D4; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Title Bar -->
+        <div class="title-bar flex items-center">
+            <h1>주요 기능 소개</h1>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-semibold">업무의 모든 것을 담은 단일 플랫폼</h2>
+                <p class="text-gray-600">다이렉트클라우드 그룹웨어는 성공적인 비즈니스를 위한 모든 핵심 기능을 제공합니다.</p>
+            </div>
+
+            <div class="grid grid-cols-3 grid-rows-2 gap-6">
+                <!-- Electronic Approval -->
+                <div class="feature-card text-center">
+                    <i class="fas fa-file-signature feature-icon"></i>
+                    <h3 class="font-bold text-lg">전자결재</h3>
+                    <p class="text-sm text-gray-600">모바일/PC 기반의 신속한 결재 처리와 다양한 기본 양식 제공으로 의사결정 속도를 높입니다.</p>
+                </div>
+                <!-- Business Mail -->
+                <div class="feature-card text-center">
+                    <i class="fas fa-envelope-open-text feature-icon"></i>
+                    <h3 class="font-bold text-lg">기업 메일</h3>
+                    <p class="text-sm text-gray-600">강력한 보안과 대용량 저장 공간, 아카이빙 기능으로 안정적인 비즈니스 커뮤니케이션을 보장합니다.</p>
+                </div>
+                <!-- Business Messenger -->
+                <div class="feature-card text-center">
+                    <i class="fas fa-comments feature-icon"></i>
+                    <h3 class="font-bold text-lg">업무용 메신저</h3>
+                    <p class="text-sm text-gray-600">조직도 연동, 파일 공유, 실시간 알림 기능으로 빠르고 정확한 소통을 지원합니다.</p>
+                </div>
+                <!-- Schedule Management -->
+                <div class="feature-card text-center">
+                    <i class="fas fa-calendar-alt feature-icon"></i>
+                    <h3 class="font-bold text-lg">일정 관리</h3>
+                    <p class="text-sm text-gray-600">개인, 팀, 전사 일정을 공유하고 회의실 등 공용 자원을 효율적으로 관리할 수 있습니다.</p>
+                </div>
+                <!-- Time & Attendance -->
+                <div class="feature-card text-center">
+                    <i class="fas fa-user-clock feature-icon"></i>
+                    <h3 class="font-bold text-lg">근태 관리</h3>
+                    <p class="text-sm text-gray-600">GPS/IP 기반의 정확한 출퇴근 관리와 다양한 유연근무제 지원으로 편리한 근태 환경을 제공합니다.</p>
+                </div>
+                <!-- Data Archive -->
+                <div class="feature-card text-center">
+                    <i class="fas fa-folder-open feature-icon"></i>
+                    <h3 class="font-bold text-lg">자료실</h3>
+                    <p class="text-sm text-gray-600">회사의 중요 지식 자산을 중앙에서 체계적으로 관리하고 버전 관리 및 강력한 보안으로 보호합니다.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white p-5 rounded-lg shadow-lg border-t-4 border-blue-600">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 mr-5">
+                        <i class="fab fa-microsoft text-6xl text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-blue-800">Microsoft 365와의 완벽한 시너지</h3>
+                        <p class="text-gray-700">Outlook, Teams, SharePoint, OneDrive 등 Microsoft 365 서비스와 그룹웨어 기능이 완벽하게 연동됩니다. 별도의 로그인 없이 하나의 플랫폼에서 모든 업무를 처리하여 생산성을 극대화하세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-4 right-6 text-gray-500 text-sm">
+            <p>Page 2 of 4</p>
+        </div>
+    </div>
+</body>
+</html>

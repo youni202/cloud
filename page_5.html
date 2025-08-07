@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Microsoft 365 솔루션 제안</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 859px; font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 859px;
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .title-bar {
+            background-color: #0078D4;
+            height: 90px;
+            padding: 0 40px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content-area {
+            padding: 30px 40px;
+        }
+        .highlight {
+            color: #0078D4;
+            font-weight: 600;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f0f7ff;
+            color: #0078D4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+        }
+        .roi-container {
+            height: 180px;
+            position: relative;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            background-color: #0078D4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        td {
+            padding: 8px 10px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: white;
+        }
+        .badge-roi {
+            background-color: #107C10;
+        }
+        .badge-security {
+            background-color: #D83B01;
+        }
+    </style>
+</head>
+<body>
+<div class="slide">
+<!-- Title Bar -->
+<div class="title-bar flex items-center">
+<h1>Microsoft 365 솔루션 제안</h1>
+</div>
+<!-- Content Area -->
+<div class="content-area">
+<div class="grid grid-cols-2 gap-6">
+<!-- Left Column - Plan Comparison -->
+<div>
+<h2 class="text-2xl font-semibold mb-4">비즈니스용 패키지 비교</h2>
+<div class="card p-4 mb-5">
+<table data-sk-source-container="chart" data-sk-source-id="T4MOZL" data-sk-source-type="web_search">
+<thead>
+<tr>
+<th class="w-1/4">구분</th>
+<th class="w-1/4">Business Basic</th>
+<th class="w-1/4">Business Standard</th>
+<th class="w-1/4">Business Premium</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>주요 대상</td>
+<td>300인 이하 중소기업</td>
+<td>300인 이하 중소기업</td>
+<td>300인 이하 중소기업</td>
+</tr>
+<tr>
+<td>Office 앱</td>
+<td>웹/모바일 전용</td>
+<td>데스크톱/웹/모바일</td>
+<td>데스크톱/웹/모바일</td>
+</tr>
+<tr>
+<td>Teams</td>
+<td>포함</td>
+<td>포함</td>
+<td>포함</td>
+</tr>
+<tr>
+<td>보안</td>
+<td>표준 보안</td>
+<td>표준 보안</td>
+<td><span class="badge badge-security">고급 보안</span><br/>(Intune, Azure Information Protection)</td>
+</tr>
+<tr>
+<td>월 구독료</td>
+<td><span class="badge badge-roi">6,500원</span><br/>(할인가)</td>
+<td><span class="badge badge-roi">13,900원</span><br/>(할인가)</td>
+<td>별도 문의</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="card p-4">
+<h3 class="font-bold mb-3">엔터프라이즈용 패키지</h3>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-blue-50 p-3 rounded-lg">
+<h4 class="font-semibold text-blue-700 mb-1">Enterprise E3</h4>
+<p class="text-sm mb-2">대기업/중견기업</p>
+<p class="text-sm">Business Premium의 모든 기능, Microsoft Defender, Power BI Pro</p>
+</div>
+<div class="bg-blue-50 p-3 rounded-lg">
+<h4 class="font-semibold text-blue-700 mb-1">Enterprise E5</h4>
+<p class="text-sm mb-2">대기업/중견기업</p>
+<p class="text-sm">E3의 모든 기능, 고급 감사 및 통화 기능, 최고 수준 보안 및 분석</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column - ROI and Benefits -->
+<div>
+<h2 class="text-2xl font-semibold mb-4">ROI 분석 및 기대효과</h2>
+<div class="card p-5 mb-5">
+<h3 class="font-bold mb-3 flex items-center">
+<i class="fas fa-chart-pie text-blue-500 mr-2"></i>생성형 AI 투자수익
+                        </h3>
+<div class="flex items-center mb-4">
+<div class="w-1/2">
+<p class="mb-2"><span class="highlight">92%</span>의 생성형 AI 조기 도입 기업이 투자 대비 수익(ROI)을 실현했습니다.</p>
+<p><span class="highlight">평균 ROI</span>는 <span class="highlight">41%</span>에 달합니다.</p>
+</div>
+<div class="w-1/2" id="roi-chart" data-sk-source-container="chart" data-sk-source-id="TJSHS0" data-sk-source-type="web_search"></div>
+</div>
+</div>
+<div class="card p-5">
+<h3 class="font-bold mb-3">주요 기대효과</h3>
+<div class="space-y-3">
+<div class="flex items-start">
+<div class="feature-icon">
+<i class="fas fa-dollar-sign"></i>
+</div>
+<div>
+<h4 class="font-semibold">비용 효율성 극대화</h4>
+<p class="text-sm">초기 인프라 투자 비용(CapEx)을 운영 비용(OpEx)으로 전환하여 IT 비용 구조 최적화</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="feature-icon">
+<i class="fas fa-tachometer-alt"></i>
+</div>
+<div>
+<h4 class="font-semibold">업무 생산성 향상</h4>
+<p class="text-sm">시공간 제약 없는 협업 환경 구축, Copilot을 활용한 반복작업 자동화</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="feature-icon">
+<i class="fas fa-shield-alt"></i>
+</div>
+<div>
+<h4 class="font-semibold">보안 및 안정성 강화</h4>
+<p class="text-sm">Microsoft의 지능형 보안 시스템, Microsoft Entra ID와 같은 고급 ID 및 액세스 관리</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="feature-icon">
+<i class="fas fa-rocket"></i>
+</div>
+<div>
+<h4 class="font-semibold">비즈니스 민첩성 확보</h4>
+<p class="text-sm">클라우드 기반의 신속한 서비스 출시와 데이터 기반 의사결정 체계</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-4 right-6 text-gray-500 text-sm">
+<p>Page 5 of 12</p>
+</div>
+</div>
+</div>
+<script>
+        // Simple D3.js ROI chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const width = 180;
+            const height = 120;
+            const margin = {top: 10, right: 10, bottom: 30, left: 40};
+            
+            const svg = d3.select("#roi-chart")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+            
+            // Data based on DOC - 92% ROI achievement rate, average 41% ROI
+            const data = [
+                {label: "ROI 실현", value: 92},
+                {label: "ROI 미실현", value: 8}
+            ];
+            
+            const x = d3.scaleBand()
+                .domain(data.map(d => d.label))
+                .range([margin.left, width - margin.right])
+                .padding(0.3);
+            
+            const y = d3.scaleLinear()
+                .domain([0, 100])
+                .range([height - margin.bottom, margin.top]);
+            
+            // Add bars
+            svg.selectAll("rect")
+                .data(data)
+                .join("rect")
+                .attr("x", d => x(d.label))
+                .attr("y", d => y(d.value))
+                .attr("width", x.bandwidth())
+                .attr("height", d => y(0) - y(d.value))
+                .attr("fill", (d, i) => i === 0 ? "#107C10" : "#D83B01");
+            
+            // Add x-axis
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(d3.axisBottom(x).tickSize(0))
+                .call(g => g.select(".domain").remove());
+            
+            // Add y-axis
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .call(d3.axisLeft(y).ticks(5).tickFormat(d => d + "%"))
+                .call(g => g.select(".domain").remove());
+            
+            // Add average line
+            svg.append("line")
+                .attr("x1", margin.left)
+                .attr("x2", width - margin.right)
+                .attr("y1", y(41))
+                .attr("y2", y(41))
+                .attr("stroke", "#0078D4")
+                .attr("stroke-width", 2)
+                .attr("stroke-dasharray", "5,5");
+            
+            // Add average label
+            svg.append("text")
+                .attr("x", width - margin.right - 10)
+                .attr("y", y(41) - 5)
+                .attr("text-anchor", "end")
+                .attr("font-size", "10px")
+                .attr("fill", "#0078D4")
+                .text("평균 ROI: 41%");
+        });
+    </script>
+
+</body></html>

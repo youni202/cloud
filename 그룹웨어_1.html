@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그룹웨어 제안 개요 및 필요성</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { width: 1280px; min-height: 720px; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+        .slide { width: 1280px; min-height: 720px; position: relative; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .title-bar { background-color: #0078D4; height: 90px; padding: 0 40px; color: white; font-size: 24px; font-weight: 600; }
+        .content-area { padding: 30px 40px; }
+        .card { background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        .highlight { color: #0078D4; font-weight: 600; }
+        .value-prop-icon { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background-color: #f0f7ff; color: #0078D4; margin: 0 auto 15px; transition: all 0.3s ease; }
+        .value-prop-card:hover .value-prop-icon { transform: scale(1.1); background-color: #0078D4; color: white; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Title Bar -->
+        <div class="title-bar flex items-center">
+            <h1>그룹웨어 제안 개요 및 필요성</h1>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Left Column: Introduction & Needs -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">스마트워크의 완성, <br>다이렉트클라우드 그룹웨어</h2>
+                    <p class="text-gray-700 mb-6">
+                        다이렉트클라우드 그룹웨어는 분산된 업무 시스템을 <span class="highlight">하나의 플랫폼으로 통합</span>하여, 조직의 소통과 협업을 극대화하는 <span class="highlight">All-in-One 솔루션</span>입니다.
+                        Microsoft 365 기반의 강력한 연동성으로 차세대 디지털 워크플레이스를 구현합니다.
+                    </p>
+                    <div class="card p-5 bg-blue-50 border-l-4 border-blue-500">
+                        <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fas fa-building text-blue-600 mr-2"></i>이런 기업에 반드시 필요합니다</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i><span>체계적인 전자결재 시스템으로 빠른 의사결정이 필요한 기업</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i><span>사내 소통 부재를 해결하고 협업 문화를 구축하고 싶은 기업</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i><span>재택/원격 등 유연 근무 환경에서도 생산성을 유지해야 하는 기업</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i><span>여러 솔루션 사용으로 인한 비효율과 관리 부담을 줄이고 싶은 기업</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Core Value Proposition -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">핵심 가치 제안</h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="card p-4 text-center value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-project-diagram text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-lg">업무 통합</h3>
+                            <p class="text-sm text-gray-600">메일, 결재, 메신저 등 필수 기능을 통합하여 업무 효율을 극대화합니다.</p>
+                        </div>
+                        <div class="card p-4 text-center value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-users text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-lg">소통 강화</h3>
+                            <p class="text-sm text-gray-600">실시간 정보 공유와 빠른 소통으로 조직 전체의 협업 시너지를 높입니다.</p>
+                        </div>
+                        <div class="card p-4 text-center value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-laptop-house text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-lg">유연 근무</h3>
+                            <p class="text-sm text-gray-600">언제 어디서든 접속 가능한 환경으로 스마트워크 및 원격 근무를 지원합니다.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <img src="https://www.directcloud.co.kr/wp-content/uploads/2022/09/img_groupware_solution_01.png" alt="그룹웨어 기능 이미지" class="mx-auto rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-4 right-6 text-gray-500 text-sm">
+            <p>Page 1 of 4</p>
+        </div>
+    </div>
+</body>
+</html>
